@@ -14,7 +14,7 @@ First of all, thank you for considering to contribute. Please look at the detail
 For new roadmaps, you can either:
 
 - Submit a roadmap by providing [a textual roadmap similar to this roadmap](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5) in an [issue](https://github.com/kamranahmedse/developer-roadmap/issues).
-- Create an interactive roadmap yourself using [our roadmap editor](https://draw.roadmap.sh/) & submit the link to that roadmap in an [issue](https://github.com/kamranahmedse/developer-roadmap/issues).
+- Create an interactive roadmap yourself using [our roadmap editor](https://draw.hnmdevs.com/) & submit the link to that roadmap in an [issue](https://github.com/jonesded/developer-roadmap/issues).
 
 ## Existing Roadmaps
 
@@ -45,7 +45,7 @@ The detailed format for the issue should be as follows:
 ( Detailed list of requirements, i.e. input, output, hints to help build this, etc.)
 ```
 
-Have a look at this project to get an idea of [what we are looking for](https://roadmap.sh/projects/github-user-activity).
+Have a look at this project to get an idea of [what we are looking for](https://hnmdevs.com/projects/github-user-activity).
 
 ## Adding Content
 

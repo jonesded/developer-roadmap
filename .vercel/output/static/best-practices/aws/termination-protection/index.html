@@ -1,0 +1,11 @@
+<!DOCTYPE html><script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script><div data-github-url="https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/best-practices/aws/content/termination-protection.md"></div> <h1 id="termination-protection">Termination Protection</h1>
+<blockquote>
+<p>Use termination protection for non-auto-scaling instances.</p>
+</blockquote>
+<p>If you have any instances which are one-off things that aren’t under auto-scaling, then you should probably enable termination protection, to stop anyone from accidentally deleting the instance. I’ve had it happen, it sucks, learn from my mistake!</p>

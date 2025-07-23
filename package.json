@@ -1,5 +1,5 @@
 {
-  "name": "roadmap.sh",
+  "name": "hnm-devs",
   "type": "module",
   "version": "1.0.0",
   "private": true,
@@ -34,6 +34,7 @@
     "@astrojs/node": "^9.2.1",
     "@astrojs/react": "^4.2.7",
     "@astrojs/sitemap": "^3.4.0",
+    "@astrojs/vercel": "^8.2.3",
     "@fingerprintjs/fingerprintjs": "^4.6.2",
     "@microsoft/clarity": "^1.0.0",
     "@nanostores/react": "^1.0.0",

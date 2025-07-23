@@ -1,0 +1,1 @@
+import{c as e}from"./index.BHh4vvK5.js";import{a as n}from"./index.3whys8t3.js";const o=n([]),m=n(),t=e(m,a=>a?.role),c=e(t,a=>["admin"].includes(a)),i=e(t,a=>["admin","manager"].includes(a));export{c as $,m as a,i as b,o as c};

@@ -1,0 +1,653 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "^/(.*)/$",
+			"headers": {
+				"Location": "/$1"
+			},
+			"status": 308
+		},
+		{
+			"src": "^/ai-tutor$",
+			"headers": {
+				"Location": "/ai"
+			},
+			"status": 301
+		},
+		{
+			"src": "^/devops/devops-engineer$",
+			"headers": {
+				"Location": "/devops"
+			},
+			"status": 301
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"src": "^/_server-islands/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/_image$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/404$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/about$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account/billing$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account/friends$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account/notification$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account/road-card$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account/roadmaps$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account/settings$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account/update-profile$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/account$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/advertise$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/chat/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/chat$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/community$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/course$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/courses$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/guide/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/guide$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/guides$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/quiz/search$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/quiz/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/quiz$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/quizzes$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/roadmap$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/roadmap-chat$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/roadmaps$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/staff-picks$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/career-path$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/lifecycle$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/skills$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/tools$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-ai$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-business-analytics$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-computer-science$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-cyber-security$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-data-analytics$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-data-engineering$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-machine-learning$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-software-engineering$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-data-scientist/vs-statistics$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-roadmaps/explore$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-roadmaps/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-roadmaps$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/ai-tutor$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/backend/developer-skills$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/backend/developer-tools$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/backend/frameworks$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/backend/job-description$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/backend/languages$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/backend/project-ideas$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/backend/technologies$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/befriend$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/best-practices$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/card/([^/]+?)/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/changelog$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/community$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/courses/master-sql$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/courses/sql$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/dashboard$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/data-analyst/career-path$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/data-analyst/how-to-become$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/automation$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/automation-tools$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/best-practices$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/career-path$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/devops-engineer$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/devops-vs-sre$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/how-to-become-devops-engineer$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/job-description$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/lifecycle$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/principles$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/shift-left-testing$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/skills$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/test-automation$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/tools$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/vs-agile$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/vs-developer$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/vs-devsecops$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/devops/vs-full-stack$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/discord$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/forgot-password$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/frontend/developer-skills$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/frontend/frameworks$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/frontend/how-to-become-frontend-developer$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/frontend/job-description$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/frontend/languages$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/frontend/technologies$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/frontend/web-developer-portfolio$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/full-stack/developer-skills$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/full-stack/how-to-become$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/full-stack/job-description$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/full-stack/vs-backend$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/full-stack/vs-software-engineer$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/get-started$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/github$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/golang/rest-api$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/golang/vs-java$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/guides$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/java/developer-skills$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/java/vs-javascript$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/java/vs-python$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/javascript/vs-typescript$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/leaderboard$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/login$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/og/best-practice/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/og/guide/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/og/roadmap/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/og/user/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/pages\\.json/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/premium$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/privacy$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/projects$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/questions$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/r/embed$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/r/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/r$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/reset-password$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/respond-invite$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/roadmaps$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/signup$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/sql/hard-to-learn$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/sql/how-long-to-learn$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/sql/vs-mysql$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/sql/vs-python$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team/activity$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team/member$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team/members$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team/new$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team/progress$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team/roadmaps$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team/settings$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/team$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/teams$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/terms$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/terms-of-sale$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/thank-you$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/twitter$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/u/([^/]+?)$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/v1-health$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/verification-pending$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/verify-account$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/verify-email$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/videos$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/x$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/youtube$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)\\.json$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)/ai$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/([^/]+?)(?:/(.*?))?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/$",
+			"dest": "_render"
+		},
+		{
+			"src": "^/.*$",
+			"dest": "_render",
+			"status": 404
+		}
+	]
+}

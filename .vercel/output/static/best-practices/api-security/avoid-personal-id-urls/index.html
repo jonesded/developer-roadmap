@@ -1,0 +1,11 @@
+<!DOCTYPE html><script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script><div data-github-url="https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/best-practices/api-security/content/avoid-personal-id-urls.md"></div> <h1 id="avoid-personal-id-in-urls">Avoid Personal ID in URLs</h1>
+<blockquote>
+<p>Avoid user’s personal ID in the resource URLs e.g. users/242/orders</p>
+</blockquote>
+<p>User’s own resource ID should be avoided. Use <code>/me/orders</code> instead of <code>/user/654321/orders</code>. This will help avoid the risk of exposing the user’s personal ID that can be used for further attacks.</p>

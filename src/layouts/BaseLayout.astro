@@ -64,9 +64,9 @@ const {
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
-const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
+const currentPageAbsoluteUrl = `https://hnmdevs.com${permalink}`;
 const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
-const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
+const commitUrl = `https://github.com/jonesded/developer-roadmap/commit/${
   import.meta.env.GITHUB_SHA
 }`;
 

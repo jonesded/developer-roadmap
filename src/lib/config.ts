@@ -1,18 +1,18 @@
 export const siteConfig = {
-  title: 'Roadmaps to becoming a modern developer',
+  title: 'HNM Devs - Roadmaps to becoming a modern developer',
   description:
     'Community driven roadmaps, articles and guides for developers to grow in their career.',
   url: {
-    twitter: 'https://twitter.com/roadmapsh',
-    youtube: 'https://youtube.com/theroadmap?sub_confirmation=1',
-    repo: 'https://github.com/kamranahmedse/developer-roadmap',
+    twitter: 'https://twitter.com/hnmdevs',
+    youtube: 'https://youtube.com/hnmdevs?sub_confirmation=1',
+    repo: 'https://github.com/jonesded/developer-roadmap',
     contribute:
-      'https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing.md',
-    issue: 'https://github.com/kamranahmedse/developer-roadmap/issues/new',
+      'https://github.com/jonesded/developer-roadmap/tree/master/contributing.md',
+    issue: 'https://github.com/jonesded/developer-roadmap/issues/new',
   },
   keywords: [
     'roadmap',
-    'roadmap.sh',
+    'hnm devs',
     'developer roadmaps',
     'developer roadmap',
     'how to become a developer',

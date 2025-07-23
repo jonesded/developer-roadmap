@@ -10,7 +10,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://roadmap.sh/',
+  site: 'https://hnmdevs.com/',
   redirects: {
     '/devops/devops-engineer': {
       status: 301,
@@ -23,7 +23,7 @@ export default defineConfig({
   },
   vite: {
     server: {
-      allowedHosts: ['roadmap.sh', 'port3k.kamranahmed.info'],
+      allowedHosts: ['hnmdevs.com', 'localhost'],
     },
   },
   markdown: {

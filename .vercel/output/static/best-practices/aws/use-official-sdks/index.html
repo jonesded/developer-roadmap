@@ -1,0 +1,11 @@
+<!DOCTYPE html><script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script><div data-github-url="https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/best-practices/aws/content/use-official-sdks.md"></div> <h1 id="use-official-sdks">Use Official SDKs</h1>
+<blockquote>
+<p>If you need to interact with AWS, use the SDK for your language.</p>
+</blockquote>
+<p>Don’t try to roll your own, I did this at first as I only needed a simple upload to S3, but then you add more services and it’s just an all around bad idea. <a href="http://aws.amazon.com/tools/" rel="noopener noreferrer nofollow" target="_blank">The AWS SDKs</a> are well written, handle authentication automatically, handle retry logic, and they’re maintained and iterated on by Amazon. Also, if you use EC2 IAM roles (which you absolutely should, more on this later) then the SDK will automatically grab the correct credentials for you.</p>

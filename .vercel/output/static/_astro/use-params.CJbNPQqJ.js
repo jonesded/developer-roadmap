@@ -1,0 +1,1 @@
+import{r as s}from"./index.Z3BHPS3u.js";function m(){const[r,e]=s.useState({});return s.useEffect(()=>{const t=new URLSearchParams(window.location.search),a={};for(const[o,n]of t.entries())a[o]=n;e(a)},[]),r}export{m as u};

@@ -1,0 +1,1 @@
+function t(e){const s=Date.now().toString();return localStorage.setItem(s,JSON.stringify(e)),localStorage.setItem("lastMessagesSessionId",s),s}function a(e){const s=localStorage.getItem(e);return s?JSON.parse(s):[]}function o(){localStorage.removeItem("lastMessagesSessionId")}export{o as c,a as g,t as s};

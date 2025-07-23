@@ -1,0 +1,1 @@
+import{r}from"./index.Z3BHPS3u.js";function n(){const[t,e]=r.useState({x:0,y:0});return r.useEffect(()=>{const o=()=>{e({x:window.scrollX,y:window.scrollY})};return window.addEventListener("scroll",o),()=>window.removeEventListener("scroll",o)},[]),t}export{n as u};

@@ -1,0 +1,11 @@
+<!DOCTYPE html><script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+		var script = document.createElement('script');
+		script.defer = true;
+		script.src = '/_vercel/insights/script.js';
+		var head = document.querySelector('head');
+		head.appendChild(script);
+	</script><div data-github-url="https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/best-practices/aws/content/cloudtrail.md"></div> <h1 id="cloudtrail">CloudTrail</h1>
+<blockquote>
+<p>Use CloudTrail to keep an audit log.</p>
+</blockquote>
+<p>CloudTrail will log any action performed via the APIs or web console into an S3 bucket. Set up the bucket with versioning to be sure no one can modify your logs, and you then have a complete audit trail of all changes in your account. You hope that you will never need to use this, but it’s well worth having for when you do.</p>

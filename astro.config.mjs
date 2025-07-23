@@ -1,6 +1,6 @@
 // https://astro.build/config
 import sitemap from '@astrojs/sitemap';
-import node from '@astrojs/node';
+import vercel from '@astrojs/vercel/serverless';
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
@@ -51,8 +51,8 @@ export default defineConfig({
     ],
   },
   output: 'server',
-  adapter: node({
-    mode: 'standalone',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
   }),
   trailingSlash: 'never',
   integrations: [

@@ -1,13 +1,13 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsx } from 'react/jsx-runtime';
 import { useQuery } from '@tanstack/react-query';
-import { g as getAiCourseOptions } from '../../chunks/ai-course_sZQdwLbV.mjs';
-import { q as queryClient } from '../../chunks/query-client_rwy39LWF.mjs';
+import { g as getAiCourseOptions } from '../../chunks/ai-course_ei-HsZ8o.mjs';
+import { q as queryClient } from '../../chunks/query-client_BnT_580V.mjs';
 import { useState, useEffect } from 'react';
-import { A as AICourseContent, g as generateCourse } from '../../chunks/generate-ai-course_BxGiCWei.mjs';
+import { A as AICourseContent, g as generateCourse } from '../../chunks/generate-ai-course_DyRnCZAX.mjs';
 import 'js-cookie';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
-import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_DrySdgR7.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
+import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_D2DoKern.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function GetAICourse(props) {

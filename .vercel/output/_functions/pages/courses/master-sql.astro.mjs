@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { S as SQLCourseVariantPage } from '../../chunks/SQLCourseVariantPage_XS5QXRgc.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
+import { S as SQLCourseVariantPage } from '../../chunks/SQLCourseVariantPage_By9TwbAr.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$MasterSql = createComponent(($$result, $$props, $$slots) => {

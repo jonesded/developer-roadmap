@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { A as AIRoadmap } from '../../chunks/AIRoadmap_54z3l-4Z.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
+import { A as AIRoadmap } from '../../chunks/AIRoadmap_BYiyAZY0.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {

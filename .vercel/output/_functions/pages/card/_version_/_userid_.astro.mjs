@@ -1,9 +1,9 @@
-import { a as getDefaultOpenGraphImageBuffer } from '../../../chunks/open-graph_UTC5ygMV.mjs';
+import { a as getDefaultOpenGraphImageBuffer } from '../../../chunks/open-graph_CmQjHa44.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 async function getRoadCard(version, userId, variant, roadmaps = "") {
   const url = new URL(
-    `${undefined                              }/v1-badge/${version}/${userId}`
+    `${"https://api.hnmdevs.com"}/v1-badge/${version}/${userId}`
   );
   url.searchParams.set("variant", variant);
   if (roadmaps) {

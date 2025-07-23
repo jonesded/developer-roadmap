@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, m as maybeRenderHead, e as addAttribute, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_ToY2DtZF.mjs';
-import { C as CreateRoadmapButton, F as FeaturedGuideList, a as FeaturedVideoList } from '../chunks/CreateRoadmapButton_Dpb-tMYK.mjs';
+import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_BkAi8mru.mjs';
+import { C as CreateRoadmapButton, F as FeaturedGuideList, a as FeaturedVideoList } from '../chunks/CreateRoadmapButton_BXYVD-Ti.mjs';
 import 'react/jsx-runtime';
 import 'react';
 import 'clsx';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { g as getAllBestPractices } from '../chunks/best-practice_BojAiq1X.mjs';
 import { c as getAllGuides } from '../chunks/guide_CTGroPUz.mjs';
 import { g as getAllQuestionGroups } from '../chunks/question-group_Ch4lCKsB.mjs';

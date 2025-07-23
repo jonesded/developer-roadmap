@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountSidebar } from '../chunks/AccountSidebar_DuBirxqm.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_CCCzwF3s.mjs';
+import { $ as $$AccountSidebar } from '../chunks/AccountSidebar_C_DQmMJ7.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_C4SmqpML.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {

@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../../../chunks/astro/server_Cqa-EqH9.mjs';
-import { A as AIQuiz } from '../../../chunks/AIQuiz_BkNx23_c.mjs';
-import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_BiNdppmE.mjs';
+import { A as AIQuiz } from '../../../chunks/AIQuiz_7J8pcUG4.mjs';
+import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_CkmnKjD8.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const $$Astro = createAstro("https://hnmdevs.com/");

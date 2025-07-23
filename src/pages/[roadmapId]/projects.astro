@@ -56,9 +56,17 @@ const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance y
 const projects = await getProjectsByRoadmapId(roadmapId);
 const projectIds = projects.map((project) => project.id);
 
-const projectApiClient = projectApi(Astro);
-const { response: userCounts } =
-  await projectApiClient.listProjectsUserCount(projectIds);
+// Handle API calls gracefully - if API is not available, use empty counts
+let userCounts: Record<string, number> = {};
+try {
+  const projectApiClient = projectApi(Astro);
+  const { response } = await projectApiClient.listProjectsUserCount(projectIds);
+  userCounts = response || {};
+} catch (error) {
+  // API not available or request failed - continue with empty user counts
+  console.warn('Project API call failed, using empty user counts:', error);
+  userCounts = {};
+}
 ---
 
 <BaseLayout

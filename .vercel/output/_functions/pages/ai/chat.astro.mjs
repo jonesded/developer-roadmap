@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
-import { A as AIChatHistory } from '../../chunks/AIChatHistory_C8aIabMK.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
+import { A as AIChatHistory } from '../../chunks/AIChatHistory_DUNTUGkl.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {

@@ -1,12 +1,12 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { S as Spinner, u as useOutsideClick, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, e as httpGet, $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { S as Spinner, u as useOutsideClick, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, e as httpGet, $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { Search, Map, Wand2, ChevronDown, Check, Shapes } from 'lucide-react';
-import { P as Pagination } from '../chunks/Pagination_P8BoyGfA.mjs';
+import { P as Pagination } from '../chunks/Pagination_DCvqQ5el.mjs';
 import { useState, useEffect, useRef } from 'react';
 import { u as useDebounceValue } from '../chunks/use-debounce_BdAoSD5T.mjs';
-import { C as CreateRoadmapModal } from '../chunks/CreateRoadmapModal_Cd1DCEI6.mjs';
-import { R as Rating } from '../chunks/Rating_D2NDwOJI.mjs';
+import { C as CreateRoadmapModal } from '../chunks/CreateRoadmapModal_NtptFEb6.mjs';
+import { R as Rating } from '../chunks/Rating_CwXCbHcH.mjs';
 import { L as LoadingRoadmaps } from '../chunks/LoadingRoadmaps_Dv_O4-tU.mjs';
 import { u as useToast } from '../chunks/use-toast_BYLkOsfO.mjs';
 import 'clsx';
@@ -82,7 +82,7 @@ function EmptyDiscoverRoadmaps() {
     {
       onClose: () => setIsCreatingRoadmap(false),
       onCreated: (roadmap) => {
-        window.location.href = `${undefined                                     }/${roadmap?._id}`;
+        window.location.href = `${"https://draw.hnmdevs.com"}/${roadmap?._id}`;
       }
     }
   );
@@ -229,7 +229,7 @@ function DiscoverRoadmaps(props) {
   }, [pageState]);
   const loadAIRoadmaps = async (currPage = 1, searchTerm = "", sortBy = "createdAt") => {
     const { response, error } = await httpGet(
-      `${undefined                              }/v1-list-showcase-roadmap`,
+      `${"https://api.hnmdevs.com"}/v1-list-showcase-roadmap`,
       {
         currPage,
         ...searchTerm && { searchTerm },

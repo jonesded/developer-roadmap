@@ -1,8 +1,8 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { b as getUrlParams, S as Spinner, $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { b as getUrlParams, S as Spinner, $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { V as VerifyUpgrade } from '../chunks/VerifyUpgrade_Z_ucYoBE.mjs';
+import { V as VerifyUpgrade } from '../chunks/VerifyUpgrade_DdPJc1ui.mjs';
 import { ChevronRight } from 'lucide-react';
 export { renderers } from '../renderers.mjs';
 
@@ -20,7 +20,7 @@ function ThankYouPage() {
     }
     let decodedNextPage = decodeURIComponent(next);
     if (decodedNextPage === "/courses/sql") {
-      decodedNextPage = `${undefined                                     }/sql`;
+      decodedNextPage = `${"https://hnmdevs.com"}/sql`;
       window?.fireEvent({
         action: "sql_course_purchase_complete",
         category: "course",

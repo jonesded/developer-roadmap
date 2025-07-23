@@ -1,5 +1,5 @@
 import { c as createAstro, a as createComponent, m as maybeRenderHead, e as addAttribute, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { g as getAllChangelogs } from '../chunks/changelog_CNibRO16.mjs';
 import { DateTime } from 'luxon';
 import { jsxs, Fragment, jsx } from 'react/jsx-runtime';

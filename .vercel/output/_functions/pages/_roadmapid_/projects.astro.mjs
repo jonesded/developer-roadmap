@@ -1,14 +1,14 @@
 import { _ as __variableDynamicImportRuntimeHelper } from '../../chunks/dynamic-import-helper_uMTE3ehW.mjs';
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$RoadmapHeader } from '../../chunks/RoadmapHeader_3MF_Oa1V.mjs';
+import { $ as $$RoadmapHeader } from '../../chunks/RoadmapHeader_Bq-ayujV.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { FolderKanbanIcon, Bell, Check, Trash2, HeartHandshake } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
-import { i as isLoggedIn, c as cn, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, h as httpPost, $ as $$BaseLayout } from '../../chunks/BaseLayout_BrSKT5L_.mjs';
+import { i as isLoggedIn, c as cn, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, h as httpPost, $ as $$BaseLayout } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
 import { s as showLoginPopup } from '../../chunks/popup_DWUkHIfQ.mjs';
-import { P as ProjectCard, p as projectApi } from '../../chunks/project_3cUbsQ_1.mjs';
+import { P as ProjectCard, p as projectApi } from '../../chunks/project_BggBM4AC.mjs';
 import { p as projectDifficulties, g as getProjectsByRoadmapId } from '../../chunks/project_CvYjxAZ4.mjs';
-import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_UTC5ygMV.mjs';
+import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_CmQjHa44.mjs';
 import { g as getRoadmapIds } from '../../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../../renderers.mjs';
 
@@ -85,7 +85,7 @@ function ProjectsList(props) {
     }
     const projectIds = projects.map((project) => project.id);
     const { response, error } = await httpPost(
-      `${undefined                              }/v1-list-project-statuses`,
+      `${"https://api.hnmdevs.com"}/v1-list-project-statuses`,
       {
         projectIds
       }
@@ -207,8 +207,15 @@ const $$Projects = createComponent(async ($$result, $$props, $$slots) => {
   const seoDescription = `Seeking ${nounTitle.toLowerCase()} projects to enhance your skills? Explore our top 20 project ideas, from simple apps to complex systems. Start building today!`;
   const projects = await getProjectsByRoadmapId(roadmapId);
   const projectIds = projects.map((project) => project.id);
-  const projectApiClient = projectApi(Astro2);
-  const { response: userCounts } = await projectApiClient.listProjectsUserCount(projectIds);
+  let userCounts = {};
+  try {
+    const projectApiClient = projectApi(Astro2);
+    const { response } = await projectApiClient.listProjectsUserCount(projectIds);
+    userCounts = response || {};
+  } catch (error) {
+    console.warn("Project API call failed, using empty user counts:", error);
+    userCounts = {};
+  }
   return renderTemplate`${renderComponent($$result, "BaseLayout", $$BaseLayout, { "permalink": `/${roadmapId}/projects`, "title": seoTitle, "description": seoDescription, "briefTitle": roadmapData.briefTitle, "ogImageUrl": ogImageUrl, "keywords": roadmapData.seo.keywords, "noIndex": projects.length === 0, "resourceId": roadmapId, "resourceType": "roadmap" }, { "default": async ($$result2) => renderTemplate` ${maybeRenderHead()}<div class="bg-gray-50"> ${renderComponent($$result2, "RoadmapHeader", $$RoadmapHeader, { "title": title, "description": description, "note": roadmapData.note, "partner": roadmapData.partner, "roadmapId": roadmapId, "hasTopics": roadmapData.hasTopics, "isUpcoming": roadmapData.isUpcoming, "isForkable": roadmapData.isForkable, "question": roadmapData.question, "activeTab": "projects", "projectCount": projects.length, "coursesCount": roadmapData.courses?.length || 0 })} <div class="container"> ${projects.length === 0 && renderTemplate`${renderComponent($$result2, "EmptyProjects", EmptyProjects, { "client:load": true, "client:component-hydration": "load", "client:component-path": "/workspace/src/components/Projects/EmptyProjects", "client:component-export": "EmptyProjects" })}`} ${projects.length > 0 && renderTemplate`${renderComponent($$result2, "ProjectsList", ProjectsList, { "projects": projects, "userCounts": userCounts || {}, "client:load": true, "client:component-hydration": "load", "client:component-path": "/workspace/src/components/Projects/ProjectsList", "client:component-export": "ProjectsList" })}`} </div> </div> ` })}`;
 }, "/workspace/src/pages/[roadmapId]/projects.astro", void 0);
 

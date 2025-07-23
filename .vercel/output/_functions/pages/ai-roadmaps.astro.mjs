@@ -5,17 +5,17 @@ import { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import { u as useToast } from '../chunks/use-toast_BYLkOsfO.mjs';
 import { generateAIRoadmapFromText, renderFlowJSON } from '../chunks/index_DJK1nS1V.mjs';
 import { r as replaceChildren } from '../chunks/dom_C6E8wq7N.mjs';
-import { u as useOutsideClick, c as cn, S as Spinner, e as httpGet, i as isLoggedIn, l as useKeydown, r as removeAuthToken, b as getUrlParams, d as deleteUrlParam, x as setAIReferralCode, p as pageProgressMessage, A as AuthenticationForm, y as visitAIRoadmap, h as httpPost, $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { u as useOutsideClick, c as cn, S as Spinner, e as httpGet, i as isLoggedIn, l as useKeydown, r as removeAuthToken, b as getUrlParams, d as deleteUrlParam, x as setAIReferralCode, p as pageProgressMessage, A as AuthenticationForm, y as visitAIRoadmap, h as httpPost, $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { Wand, Ban, ArrowUpRight, Telescope, Contact, X, ArrowRight, FileText, Download, Save, PenSquare } from 'lucide-react';
 import { s as showLoginPopup } from '../chunks/popup_DWUkHIfQ.mjs';
 import { u as useDebounceValue } from '../chunks/use-debounce_BdAoSD5T.mjs';
-import { U as UpgradeAccountModal } from '../chunks/UpgradeAccountModal_B2RF3Ir7.mjs';
-import { u as useIsPaidUser } from '../chunks/billing_raRJBpT1.mjs';
-import { S as ShareRoadmapButton } from '../chunks/ShareRoadmapButton_CnXf8fCQ.mjs';
+import { U as UpgradeAccountModal } from '../chunks/UpgradeAccountModal_DhdxALHd.mjs';
+import { u as useIsPaidUser } from '../chunks/billing_B5wE6dhK.mjs';
+import { S as ShareRoadmapButton } from '../chunks/ShareRoadmapButton_CCL46gkQ.mjs';
 import { a as markdownToHtml } from '../chunks/markdown_rbU7j7cH.mjs';
 import { a as readAIRoadmapContentStream, I as IS_KEY_ONLY_ROADMAP_GENERATION, b as readAIRoadmapStream, g as generateAICourseRoadmapStructure } from '../chunks/ai_D2DRO333.mjs';
-import { A as AIRoadmapAlert } from '../chunks/AIRoadmapAlert_CdQJ5fol.mjs';
-import { C as CheckSubscriptionVerification } from '../chunks/CheckSubscriptionVerification_DrySdgR7.mjs';
+import { A as AIRoadmapAlert } from '../chunks/AIRoadmapAlert_BSw57rQz.mjs';
+import { C as CheckSubscriptionVerification } from '../chunks/CheckSubscriptionVerification_D2DoKern.mjs';
 export { renderers } from '../renderers.mjs';
 
 function AITermSuggestionInput(props) {
@@ -493,7 +493,7 @@ function RoadmapTopicDetail(props) {
       return;
     }
     const response = await fetch(
-      `${undefined                              }/v1-generate-ai-roadmap-content/${roadmapId}`,
+      `${"https://api.hnmdevs.com"}/v1-generate-ai-roadmap-content/${roadmapId}`,
       {
         method: "POST",
         headers: {
@@ -736,7 +736,7 @@ function GenerateRoadmap(props) {
     setCurrentRoadmap(null);
     const origin = window.location.origin;
     const response = await fetch(
-      `${undefined                              }/v1-generate-ai-roadmap`,
+      `${"https://api.hnmdevs.com"}/v1-generate-ai-roadmap`,
       {
         method: "POST",
         headers: {
@@ -817,7 +817,7 @@ function GenerateRoadmap(props) {
     pageProgressMessage.set("Redirecting to Editor");
     const { nodes, edges } = generateAIRoadmapFromText();
     const { response, error } = await httpPost(
-      `${undefined                              }/v1-save-ai-roadmap/${currentRoadmap?.id}`,
+      `${"https://api.hnmdevs.com"}/v1-save-ai-roadmap/${currentRoadmap?.id}`,
       {
         title: roadmapTerm,
         nodes: nodes.map((node) => ({
@@ -873,7 +873,7 @@ function GenerateRoadmap(props) {
   };
   const loadAIRoadmapLimit = async () => {
     const { response, error } = await httpGet(
-      `${undefined                              }/v1-get-ai-roadmap-limit`
+      `${"https://api.hnmdevs.com"}/v1-get-ai-roadmap-limit`
     );
     if (error || !response) {
       toast.error(error?.message || "Something went wrong");
@@ -887,7 +887,7 @@ function GenerateRoadmap(props) {
   };
   const loadAIRoadmap = async (roadmapId2) => {
     pageProgressMessage.set("Loading Roadmap");
-    const { response, error } = await httpGet(`${undefined                              }/v1-get-ai-roadmap/${roadmapId2}`);
+    const { response, error } = await httpGet(`${"https://api.hnmdevs.com"}/v1-get-ai-roadmap/${roadmapId2}`);
     if (error || !response) {
       toast.error(error?.message || "Something went wrong");
       setIsLoading(false);
@@ -1193,7 +1193,7 @@ function GenerateRoadmap(props) {
                     const response = await saveAIRoadmap();
                     if (response?.roadmapId) {
                       window.open(
-                        `${undefined                                     }/${response?.roadmapId}`,
+                        `${"https://draw.hnmdevs.com"}/${response?.roadmapId}`,
                         "_blank"
                       );
                     }

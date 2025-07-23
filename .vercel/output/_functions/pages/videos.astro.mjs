@@ -1,7 +1,7 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { $ as $$SimplePageHeader } from '../chunks/SimplePageHeader_Dl8X198H.mjs';
 import { V as VideoListItem } from '../chunks/VideoListItem_C5x0kUX1.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { a as getAllVideos } from '../chunks/video_B_9Z2g4L.mjs';
 export { renderers } from '../renderers.mjs';
 

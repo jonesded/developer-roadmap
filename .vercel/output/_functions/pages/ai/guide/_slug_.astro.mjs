@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../../../chunks/astro/server_Cqa-EqH9.mjs';
-import { A as AIGuide } from '../../../chunks/AIGuide_DTLFvvd0.mjs';
-import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_BiNdppmE.mjs';
+import { A as AIGuide } from '../../../chunks/AIGuide_aa0h_DQg.mjs';
+import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_CkmnKjD8.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const $$Astro = createAstro("https://hnmdevs.com/");

@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { D as DashboardPage } from '../chunks/DashboardPage_BCaspuoU.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { D as DashboardPage } from '../chunks/DashboardPage_zZJdTDvd.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { g as getAllBestPractices } from '../chunks/best-practice_BojAiq1X.mjs';
 import { a as getRoadmapsByTag } from '../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../renderers.mjs';

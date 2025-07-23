@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_CCCzwF3s.mjs';
-import { m as $$LoginPopup } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_C4SmqpML.mjs';
+import { m as $$LoginPopup } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$RespondInvite = createComponent(($$result, $$props, $$slots) => {

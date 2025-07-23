@@ -1,5 +1,5 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead, f as defineScriptVars } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$BaseLayout, j as $$AstroIcon } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$BaseLayout, j as $$AstroIcon } from '../chunks/BaseLayout_DfQviQZ5.mjs';
 import { g as getRoadmapIds } from '../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../renderers.mjs';
 

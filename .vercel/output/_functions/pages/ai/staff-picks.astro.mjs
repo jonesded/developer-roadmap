@@ -1,17 +1,17 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useQuery } from '@tanstack/react-query';
-import { c as listFeaturedAiCoursesOptions } from '../../chunks/ai-course_sZQdwLbV.mjs';
-import { q as queryClient } from '../../chunks/query-client_rwy39LWF.mjs';
+import { c as listFeaturedAiCoursesOptions } from '../../chunks/ai-course_ei-HsZ8o.mjs';
+import { q as queryClient } from '../../chunks/query-client_BnT_580V.mjs';
 import { useState, useEffect } from 'react';
-import { b as getUrlParams, s as setUrlParams, d as deleteUrlParam } from '../../chunks/BaseLayout_BrSKT5L_.mjs';
-import { A as AICourseCard } from '../../chunks/AICourseCard_R0K9YkeU.mjs';
-import { P as Pagination } from '../../chunks/Pagination_P8BoyGfA.mjs';
-import { A as AITutorHeader, a as AICourseSearch, b as AITutorTallMessage } from '../../chunks/AITutorTallMessage_hW-mNMq6.mjs';
-import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_B2RF3Ir7.mjs';
+import { b as getUrlParams, s as setUrlParams, d as deleteUrlParam } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
+import { A as AICourseCard } from '../../chunks/AICourseCard_JHGM-po4.mjs';
+import { P as Pagination } from '../../chunks/Pagination_DCvqQ5el.mjs';
+import { A as AITutorHeader, a as AICourseSearch, b as AITutorTallMessage } from '../../chunks/AITutorTallMessage_BGX738uL.mjs';
+import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_DhdxALHd.mjs';
 import { Loader2, BookOpen } from 'lucide-react';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
-import { A as AITutorLayout } from '../../chunks/AITutorLayout_CJilm_5H.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
+import { A as AITutorLayout } from '../../chunks/AITutorLayout_D2lYDCfF.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function AILoadingState(props) {

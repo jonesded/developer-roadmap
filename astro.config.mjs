@@ -21,11 +21,6 @@ export default defineConfig({
       destination: '/ai',
     },
   },
-  vite: {
-    server: {
-      allowedHosts: ['hnmdevs.com', 'localhost'],
-    },
-  },
   markdown: {
     shikiConfig: {
       theme: 'dracula',
@@ -69,6 +64,21 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      allowedHosts: ['hnmdevs.com', 'localhost'],
+    },
+    resolve: {
+      alias: [
+        {
+          find: '@roadmapsh/editor/style.css',
+          replacement: new URL('./packages/editor/style.css', import.meta.url).pathname,
+        },
+        {
+          find: '@roadmapsh/editor',
+          replacement: new URL('./packages/editor/index.js', import.meta.url).pathname,
+        },
+      ],
+    },
     ssr: {
       noExternal: [/^@roadmapsh\/editor.*$/],
     },

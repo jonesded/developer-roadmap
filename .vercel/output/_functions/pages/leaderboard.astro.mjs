@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState } from 'react';
-import { c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
+import { c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
 import { Users2, Zap, FolderKanban, Users, GitPullRequest } from 'lucide-react';
 import { E as ErrorIcon } from '../chunks/ErrorIcon_C-N2vwX6.mjs';
-import { a as api } from '../chunks/api_ybG8o1AR.mjs';
+import { a as api } from '../chunks/api_Dq56p7jO.mjs';
 export { renderers } from '../renderers.mjs';
 
 function TrophyEmoji(props) {
@@ -296,14 +296,14 @@ function leaderboardApi(context) {
   return {
     listLeaderboardStats: async function() {
       return api(context).get(
-        `${"https://api.hnmdevs.com"}/v1-list-leaderboard-stats`,
+        `${"https://api.imoogleai.xyz"}/v1-list-leaderboard-stats`,
         {}
       );
     }
   };
 }
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 const $$Leaderboard = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);

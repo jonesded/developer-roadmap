@@ -1,5 +1,5 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead, f as defineScriptVars } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$BaseLayout, j as $$AstroIcon } from '../chunks/BaseLayout_DfQviQZ5.mjs';
+import { $ as $$BaseLayout, j as $$AstroIcon } from '../chunks/BaseLayout_B-BXcELP.mjs';
 import { g as getRoadmapIds } from '../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../renderers.mjs';
 
@@ -7,7 +7,7 @@ var __freeze = Object.freeze;
 var __defProp = Object.defineProperty;
 var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(cooked.slice()) }));
 var _a;
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const $$404 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$404;

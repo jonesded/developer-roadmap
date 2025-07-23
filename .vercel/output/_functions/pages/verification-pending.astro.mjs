@@ -1,8 +1,8 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { h as httpPost } from '../chunks/BaseLayout_DfQviQZ5.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_C4SmqpML.mjs';
+import { h as httpPost } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_BpeWaMTO.mjs';
 export { renderers } from '../renderers.mjs';
 
 function VerifyLetterIcon(props) {
@@ -122,7 +122,7 @@ function VerificationEmailMessage() {
     setEmail(urlParams.get("email"));
   }, []);
   const resendVerificationEmail = () => {
-    httpPost(`${"https://api.hnmdevs.com"}/v1-send-verification-email`, {
+    httpPost(`${"https://api.imoogleai.xyz"}/v1-send-verification-email`, {
       email
     }).then(({ response, error: error2 }) => {
       if (error2) {

@@ -3,18 +3,18 @@ import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { MoreVertical, ArrowUpRightIcon, Trash2, Loader2, BookOpen } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
-import { u as useOutsideClick, l as useKeydown, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, i as isLoggedIn } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
+import { u as useOutsideClick, l as useKeydown, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, i as isLoggedIn } from '../../chunks/BaseLayout_B-BXcELP.mjs';
 import { s as showLoginPopup } from '../../chunks/popup_DWUkHIfQ.mjs';
-import { l as listUserAIGuidesOptions } from '../../chunks/ai-guide_DcVwAuuo.mjs';
-import { q as queryClient, b as httpDelete } from '../../chunks/query-client_BnT_580V.mjs';
-import { a as AICourseSearch, b as AITutorTallMessage } from '../../chunks/AITutorTallMessage_BGX738uL.mjs';
-import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_DhdxALHd.mjs';
-import { P as Pagination } from '../../chunks/Pagination_DCvqQ5el.mjs';
+import { l as listUserAIGuidesOptions } from '../../chunks/ai-guide_DwS_b0Br.mjs';
+import { q as queryClient, b as httpDelete } from '../../chunks/query-client_CBXGK_YM.mjs';
+import { a as AICourseSearch, b as AITutorTallMessage } from '../../chunks/AITutorTallMessage_CK__x6UQ.mjs';
+import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_vuvdVS66.mjs';
+import { P as Pagination } from '../../chunks/Pagination_xm1ZIew_.mjs';
 import { u as useToast } from '../../chunks/use-toast_BYLkOsfO.mjs';
-import { u as useIsPaidUser } from '../../chunks/billing_B5wE6dhK.mjs';
-import { a as aiLimitOptions } from '../../chunks/ai-course_ei-HsZ8o.mjs';
-import { A as AIUsageWarning, a as AILibraryLayout } from '../../chunks/AILibraryLayout_D3LwefsU.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
+import { u as useIsPaidUser } from '../../chunks/billing_5mov2PsZ.mjs';
+import { a as aiLimitOptions } from '../../chunks/ai-course_C2IOZ4Jw.mjs';
+import { A as AIUsageWarning, a as AILibraryLayout } from '../../chunks/AILibraryLayout_BvOzW0uA.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CB584z4R.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function AIGuideActions(props) {

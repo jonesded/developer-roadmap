@@ -1,16 +1,16 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_C_DQmMJ7.mjs';
+import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_CmRcSHZn.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useRef, useState, useEffect } from 'react';
-import { c as cn, u as useOutsideClick, p as pageProgressMessage, n as httpPatch, h as httpPost, e as httpGet } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
+import { c as cn, u as useOutsideClick, p as pageProgressMessage, n as httpPatch, h as httpPost, e as httpGet } from '../../chunks/BaseLayout_B-BXcELP.mjs';
 import { Globe, LockIcon, ChevronDown, Loader2, X, CheckIcon, FileBadge, CheckCircle, ArrowUpRight, Copy, Check, Eye, EyeOff } from 'lucide-react';
 import { u as useToast } from '../../chunks/use-toast_BYLkOsfO.mjs';
-import { C as CreateRoadmapModal } from '../../chunks/CreateRoadmapModal_NtptFEb6.mjs';
+import { C as CreateRoadmapModal } from '../../chunks/CreateRoadmapModal_DH4tXRQM.mjs';
 import 'js-cookie';
 import { u as useDebounceValue } from '../../chunks/use-debounce_BdAoSD5T.mjs';
-import { U as UploadProfilePicture } from '../../chunks/UploadProfilePicture_DMQOthtl.mjs';
+import { U as UploadProfilePicture } from '../../chunks/UploadProfilePicture_CT2Tq0PF.mjs';
 import { u as useCopyText } from '../../chunks/use-copy-text_Bqwbcq8G.mjs';
-import { $ as $$AccountLayout } from '../../chunks/AccountLayout_C4SmqpML.mjs';
+import { $ as $$AccountLayout } from '../../chunks/AccountLayout_BpeWaMTO.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function SelectionButton(props) {
@@ -55,7 +55,7 @@ function VisibilityDropdown(props) {
     pageProgressMessage.set("Updating profile visibility");
     setIsVisibilityDropdownOpen(false);
     const { error } = await httpPatch(
-      `${"https://api.hnmdevs.com"}/v1-update-public-profile-visibility`,
+      `${"https://api.imoogleai.xyz"}/v1-update-public-profile-visibility`,
       {
         profileVisibility: visibility2
       }
@@ -154,7 +154,7 @@ function ProfileUsername(props) {
       return;
     }
     setIsLoading(true);
-    const { response, error } = await httpPost(`${"https://api.hnmdevs.com"}/v1-check-is-unique-username`, {
+    const { response, error } = await httpPost(`${"https://api.imoogleai.xyz"}/v1-check-is-unique-username`, {
       username: username2
     });
     if (error || !response) {
@@ -321,7 +321,7 @@ function UpdatePublicProfileForm() {
     e.preventDefault();
     setIsLoading(true);
     const { response, error } = await httpPatch(
-      `${"https://api.hnmdevs.com"}/v1-update-public-profile-config`,
+      `${"https://api.imoogleai.xyz"}/v1-update-public-profile-config`,
       {
         isAvailableForHire,
         isEmailVisible,
@@ -353,7 +353,7 @@ function UpdatePublicProfileForm() {
   const loadProfileSettings = async () => {
     setIsLoading(true);
     const { error, response } = await httpGet(
-      `${"https://api.hnmdevs.com"}/v1-get-profile-settings`
+      `${"https://api.imoogleai.xyz"}/v1-get-profile-settings`
     );
     if (error || !response) {
       setIsLoading(false);
@@ -392,7 +392,7 @@ function UpdatePublicProfileForm() {
   };
   const loadProfileRoadmaps = async () => {
     setIsLoading(true);
-    const { error, response } = await httpGet(`${"https://api.hnmdevs.com"}/v1-get-profile-roadmaps`);
+    const { error, response } = await httpGet(`${"https://api.imoogleai.xyz"}/v1-get-profile-roadmaps`);
     if (error || !response) {
       setIsLoading(false);
       toast.error(error?.message || "Something went wrong");

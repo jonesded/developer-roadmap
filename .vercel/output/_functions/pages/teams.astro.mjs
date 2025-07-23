@@ -1,5 +1,5 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { i as isLoggedIn, c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
+import { i as isLoggedIn, c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
 import { jsx, jsxs, Fragment } from 'react/jsx-runtime';
 import { CheckCircle, Shrub, Barcode, UserRoundPlus, PieChart, AlertTriangle, BookOpenIcon, SquareIcon, Copy } from 'lucide-react';
 import { useState, useEffect } from 'react';

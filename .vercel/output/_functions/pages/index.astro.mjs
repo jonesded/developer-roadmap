@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, m as maybeRenderHead, e as addAttribute, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_BkAi8mru.mjs';
-import { C as CreateRoadmapButton, F as FeaturedGuideList, a as FeaturedVideoList } from '../chunks/CreateRoadmapButton_BXYVD-Ti.mjs';
+import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_lvEJNqk9.mjs';
+import { C as CreateRoadmapButton, F as FeaturedGuideList, a as FeaturedVideoList } from '../chunks/CreateRoadmapButton_CRkoaX8n.mjs';
 import 'react/jsx-runtime';
 import 'react';
 import 'clsx';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
 import { g as getAllBestPractices } from '../chunks/best-practice_BojAiq1X.mjs';
 import { c as getAllGuides } from '../chunks/guide_CTGroPUz.mjs';
 import { g as getAllQuestionGroups } from '../chunks/question-group_Ch4lCKsB.mjs';
@@ -12,7 +12,7 @@ import { a as getRoadmapsByTag } from '../chunks/roadmap_VC9fOZso.mjs';
 import { a as getAllVideos } from '../chunks/video_B_9Z2g4L.mjs';
 export { renderers } from '../renderers.mjs';
 
-const $$Astro$1 = createAstro("https://hnmdevs.com/");
+const $$Astro$1 = createAstro("https://doc.imoogleai.xyz/");
 const $$FeaturedItem = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$FeaturedItem;
@@ -35,7 +35,7 @@ Upcoming
 </span>`} <span data-progress class="absolute bottom-0 left-0 top-0 z-10 w-0 bg-[#172a3a] transition-[width] duration-300"></span> </a>`;
 }, "/workspace/src/components/FeaturedItems/FeaturedItem.astro", void 0);
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const $$FeaturedItems = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$FeaturedItems;

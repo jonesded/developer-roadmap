@@ -1,7 +1,7 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { G as GuideListItem } from '../chunks/GuideListItem_CQjuUUaV.mjs';
-import { $ as $$SimplePageHeader } from '../chunks/SimplePageHeader_Dl8X198H.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_DfQviQZ5.mjs';
+import { $ as $$SimplePageHeader } from '../chunks/SimplePageHeader_CaJW-2KW.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
 import { c as getAllGuides } from '../chunks/guide_CTGroPUz.mjs';
 import { g as getAllQuestionGroups } from '../chunks/question-group_Ch4lCKsB.mjs';
 export { renderers } from '../renderers.mjs';

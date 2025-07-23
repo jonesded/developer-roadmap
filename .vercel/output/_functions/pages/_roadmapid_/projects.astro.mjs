@@ -1,14 +1,14 @@
 import { _ as __variableDynamicImportRuntimeHelper } from '../../chunks/dynamic-import-helper_uMTE3ehW.mjs';
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$RoadmapHeader } from '../../chunks/RoadmapHeader_Bq-ayujV.mjs';
+import { $ as $$RoadmapHeader } from '../../chunks/RoadmapHeader_QRCcxtUY.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { FolderKanbanIcon, Bell, Check, Trash2, HeartHandshake } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
-import { i as isLoggedIn, c as cn, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, h as httpPost, $ as $$BaseLayout } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
+import { i as isLoggedIn, c as cn, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, h as httpPost, $ as $$BaseLayout } from '../../chunks/BaseLayout_B-BXcELP.mjs';
 import { s as showLoginPopup } from '../../chunks/popup_DWUkHIfQ.mjs';
-import { P as ProjectCard, p as projectApi } from '../../chunks/project_BggBM4AC.mjs';
+import { P as ProjectCard, p as projectApi } from '../../chunks/project_nhp1QVeo.mjs';
 import { p as projectDifficulties, g as getProjectsByRoadmapId } from '../../chunks/project_CvYjxAZ4.mjs';
-import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_CmQjHa44.mjs';
+import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_BMQllw-Q.mjs';
 import { g as getRoadmapIds } from '../../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../../renderers.mjs';
 
@@ -85,7 +85,7 @@ function ProjectsList(props) {
     }
     const projectIds = projects.map((project) => project.id);
     const { response, error } = await httpPost(
-      `${"https://api.hnmdevs.com"}/v1-list-project-statuses`,
+      `${"https://api.imoogleai.xyz"}/v1-list-project-statuses`,
       {
         projectIds
       }
@@ -176,7 +176,7 @@ function ProjectsList(props) {
   ] });
 }
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();

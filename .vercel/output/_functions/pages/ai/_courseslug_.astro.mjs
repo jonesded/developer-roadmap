@@ -1,13 +1,13 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsx } from 'react/jsx-runtime';
 import { useQuery } from '@tanstack/react-query';
-import { g as getAiCourseOptions } from '../../chunks/ai-course_ei-HsZ8o.mjs';
-import { q as queryClient } from '../../chunks/query-client_BnT_580V.mjs';
+import { g as getAiCourseOptions } from '../../chunks/ai-course_C2IOZ4Jw.mjs';
+import { q as queryClient } from '../../chunks/query-client_CBXGK_YM.mjs';
 import { useState, useEffect } from 'react';
-import { A as AICourseContent, g as generateCourse } from '../../chunks/generate-ai-course_DyRnCZAX.mjs';
+import { A as AICourseContent, g as generateCourse } from '../../chunks/generate-ai-course_BAnvbtXh.mjs';
 import 'js-cookie';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
-import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_D2DoKern.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CB584z4R.mjs';
+import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_BpAEoJpp.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function GetAICourse(props) {
@@ -86,7 +86,7 @@ function GetAICourse(props) {
   );
 }
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 const $$courseSlug = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);

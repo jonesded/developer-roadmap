@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_C_DQmMJ7.mjs';
-import { $ as $$AccountLayout } from '../../chunks/AccountLayout_C4SmqpML.mjs';
+import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_CmRcSHZn.mjs';
+import { $ as $$AccountLayout } from '../../chunks/AccountLayout_BpeWaMTO.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Friends = createComponent(($$result, $$props, $$slots) => {

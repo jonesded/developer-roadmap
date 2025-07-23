@@ -1,7 +1,7 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_C_DQmMJ7.mjs';
-import { $ as $$AccountLayout } from '../../chunks/AccountLayout_C4SmqpML.mjs';
-import { f as $$Popup, c as cn, p as pageProgressMessage, n as httpPatch, h as httpPost, e as httpGet } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
+import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_CmRcSHZn.mjs';
+import { $ as $$AccountLayout } from '../../chunks/AccountLayout_BpeWaMTO.mjs';
+import { f as $$Popup, c as cn, p as pageProgressMessage, n as httpPatch, h as httpPost, e as httpGet } from '../../chunks/BaseLayout_B-BXcELP.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
 import { u as useToast } from '../../chunks/use-toast_BYLkOsfO.mjs';
@@ -43,7 +43,7 @@ function UpdateEmailForm(props) {
     setIsLoading(true);
     pageProgressMessage.set("Sending verification code");
     const { response, error } = await httpPatch(
-      `${"https://api.hnmdevs.com"}/v1-update-user-email`,
+      `${"https://api.imoogleai.xyz"}/v1-update-user-email`,
       { email: newEmail }
     );
     if (error || !response) {
@@ -65,7 +65,7 @@ function UpdateEmailForm(props) {
     setIsLoading(true);
     pageProgressMessage.set("Resending verification code");
     const { response, error } = await httpPatch(
-      `${"https://api.hnmdevs.com"}/v1-resend-email-verification-code`,
+      `${"https://api.imoogleai.xyz"}/v1-resend-email-verification-code`,
       { email: newEmail }
     );
     if (error || !response) {
@@ -83,7 +83,7 @@ function UpdateEmailForm(props) {
     setIsLoading(true);
     pageProgressMessage.set("Cancelling email verification");
     const { response, error } = await httpPatch(
-      `${"https://api.hnmdevs.com"}/v1-cancel-email-verification`,
+      `${"https://api.imoogleai.xyz"}/v1-cancel-email-verification`,
       {}
     );
     if (error || !response) {
@@ -256,7 +256,7 @@ function UpdatePasswordForm(props) {
       return;
     }
     const { response, error } = await httpPost(
-      `${"https://api.hnmdevs.com"}/v1-update-password`,
+      `${"https://api.imoogleai.xyz"}/v1-update-password`,
       {
         oldPassword: authProvider === "email" ? currentPassword : "social-auth",
         password: newPassword,
@@ -379,7 +379,7 @@ function ProfileSettingsPage() {
   const [newEmail, setNewEmail] = useState("");
   const loadProfile = async () => {
     const { error, response } = await httpGet(
-      `${"https://api.hnmdevs.com"}/v1-me`
+      `${"https://api.imoogleai.xyz"}/v1-me`
     );
     if (error || !response) {
       toast.error(error?.message || "Something went wrong");

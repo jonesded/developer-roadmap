@@ -1,9 +1,9 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { h as httpPost, q as setAuthToken } from '../chunks/BaseLayout_DfQviQZ5.mjs';
+import { h as httpPost, q as setAuthToken } from '../chunks/BaseLayout_B-BXcELP.mjs';
 import 'js-cookie';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_C4SmqpML.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_BpeWaMTO.mjs';
 export { renderers } from '../renderers.mjs';
 
 function ResetPasswordForm() {
@@ -30,7 +30,7 @@ function ResetPasswordForm() {
       return;
     }
     const { response, error: error2 } = await httpPost(
-      `${"https://api.hnmdevs.com"}/v1-reset-forgotten-password`,
+      `${"https://api.imoogleai.xyz"}/v1-reset-forgotten-password`,
       {
         newPassword: password,
         confirmPassword: passwordConfirm,

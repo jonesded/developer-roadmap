@@ -1,9 +1,9 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CkmnKjD8.mjs';
-import { A as AITutorLayout } from '../../chunks/AITutorLayout_D2lYDCfF.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CB584z4R.mjs';
+import { A as AITutorLayout } from '../../chunks/AITutorLayout_Cb7hPswk.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState, useRef, useEffect, useMemo } from 'react';
-import { c as cn } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
+import { c as cn } from '../../chunks/BaseLayout_B-BXcELP.mjs';
 import { g as getRoadmapIds, b as getRoadmapById, r as resourceTitleFromId } from '../../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../../renderers.mjs';
 

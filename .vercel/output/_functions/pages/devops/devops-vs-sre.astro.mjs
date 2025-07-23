@@ -1,8 +1,8 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$GuideContent } from '../../chunks/GuideContent_CI5HloKB.mjs';
-import { $ as $$BaseLayout } from '../../chunks/BaseLayout_DfQviQZ5.mjs';
+import { $ as $$GuideContent } from '../../chunks/GuideContent_dPZAVH0a.mjs';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_B-BXcELP.mjs';
 import { a as getGuideById } from '../../chunks/guide_CTGroPUz.mjs';
-import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_CmQjHa44.mjs';
+import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_BMQllw-Q.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$DevopsVsSre = createComponent(async ($$result, $$props, $$slots) => {

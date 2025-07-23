@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../../chunks/astro/server_Cqa-EqH9.mjs';
-import { A as AIQuiz } from '../../../chunks/AIQuiz_7J8pcUG4.mjs';
-import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_CkmnKjD8.mjs';
+import { A as AIQuiz } from '../../../chunks/AIQuiz_C0T58cPa.mjs';
+import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_CB584z4R.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const $$Search = createComponent(($$result, $$props, $$slots) => {

@@ -2,7 +2,7 @@ import { c as createAstro, a as createComponent } from '../chunks/astro/server_C
 import 'clsx';
 export { renderers } from '../renderers.mjs';
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 const $$Youtube = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);

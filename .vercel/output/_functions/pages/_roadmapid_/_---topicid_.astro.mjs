@@ -6,7 +6,7 @@ import MarkdownItAsync from 'markdown-it-async';
 import { fileURLToPath } from 'node:url';
 export { renderers } from '../../renderers.mjs';
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 const $$ = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);

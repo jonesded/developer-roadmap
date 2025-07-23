@@ -8,7 +8,7 @@ import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 import { projectApi } from '../../api/project';
 
-export const prerender = true;
+export const prerender = false;
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();

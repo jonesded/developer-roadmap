@@ -30,4 +30,4 @@ pnpm-debug.log*
 tests-examples
 *.csveditor/
 
-packages/editor
+# packages/editor - commented out to allow local editor package

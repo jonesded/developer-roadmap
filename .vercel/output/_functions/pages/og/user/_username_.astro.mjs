@@ -1,4 +1,4 @@
-import { a as getDefaultOpenGraphImageBuffer } from '../../../chunks/open-graph_UTC5ygMV.mjs';
+import { a as getDefaultOpenGraphImageBuffer } from '../../../chunks/open-graph_CCJZAxVd.mjs';
 import { Transformer } from '@napi-rs/image';
 export { renderers } from '../../../renderers.mjs';
 
@@ -14,7 +14,7 @@ const GET = async (context) => {
     });
   }
   const response = await fetch(
-    `${undefined                              }/v1-profile-open-graph/${username}`
+    `${"https://api.roadmap.sh"}/v1-profile-open-graph/${username}`
   );
   const svg = await response.text();
   const transformer = Transformer.fromSvg(svg).crop(0, 0, 1200, 630);

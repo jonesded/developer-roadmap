@@ -1,9 +1,9 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_BiNdppmE.mjs';
-import { A as AIChatHistory } from '../../../chunks/AIChatHistory_C8aIabMK.mjs';
+import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_ZOfUMIZI.mjs';
+import { A as AIChatHistory } from '../../../chunks/AIChatHistory_nTDSu-p8.mjs';
 export { renderers } from '../../../renderers.mjs';
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const $$chatId = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$chatId;

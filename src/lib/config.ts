@@ -3,8 +3,8 @@ export const siteConfig = {
   description:
     'Community driven roadmaps, articles and guides for developers to grow in their career.',
   url: {
-    twitter: 'https://twitter.com/hnmdevs',
-    youtube: 'https://youtube.com/hnmdevs?sub_confirmation=1',
+    twitter: 'https://twitter.com/imoogleai',
+    youtube: 'https://youtube.com/imoogleai?sub_confirmation=1',
     repo: 'https://github.com/jonesded/developer-roadmap',
     contribute:
       'https://github.com/jonesded/developer-roadmap/tree/master/contributing.md',

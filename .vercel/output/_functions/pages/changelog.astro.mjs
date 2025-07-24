@@ -1,5 +1,5 @@
 import { c as createAstro, a as createComponent, m as maybeRenderHead, e as addAttribute, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { g as getAllChangelogs } from '../chunks/changelog_CNibRO16.mjs';
 import { DateTime } from 'luxon';
 import { jsxs, Fragment, jsx } from 'react/jsx-runtime';
@@ -109,7 +109,7 @@ const ChangelogImages = ({ images }) => {
   ] });
 };
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const $$ChangelogItem = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$ChangelogItem;

@@ -1,9 +1,9 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { ExternalLink, Bot, MessageCircle, Globe2, ServerCog, GraduationCap, Blocks, Braces, Server, Smartphone, MessageCircleCode, Shield, SquareKanban, UsersRound, ShieldHalf, Workflow, Coins, Gamepad2, PenSquare, Megaphone, FolderKanban, Component, GitBranch, Waypoints, CheckSquare } from 'lucide-react';
-import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_ToY2DtZF.mjs';
+import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_DAZ3Ne46.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState } from 'react';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 export { renderers } from '../renderers.mjs';
 
 function RoadmapCard(props) {

@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState } from 'react';
-import { c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { Users2, Zap, FolderKanban, Users, GitPullRequest } from 'lucide-react';
 import { E as ErrorIcon } from '../chunks/ErrorIcon_C-N2vwX6.mjs';
-import { a as api } from '../chunks/api_JDBRsTCP.mjs';
+import { a as api } from '../chunks/api_z2VutCmy.mjs';
 export { renderers } from '../renderers.mjs';
 
 function TrophyEmoji(props) {
@@ -233,7 +233,7 @@ function LeaderboardLane(props) {
       /* @__PURE__ */ jsx("p", { className: "mt-4 text-sm text-gray-500", children: emptyText })
     ] }),
     usersToShow.length > 0 && /* @__PURE__ */ jsx("ul", { className: "divide-y divide-gray-100 pb-4", children: usersToShow.map((user, counter) => {
-      const avatar = user?.avatar ? user?.avatar?.startsWith("http") ? user?.avatar : `${undefined                                      }/${user.avatar}` : "/images/default-avatar.png";
+      const avatar = user?.avatar ? user?.avatar?.startsWith("http") ? user?.avatar : `${"https://dodrc8eu8m09s.cloudfront.net/avatars"}/${user.avatar}` : "/images/default-avatar.png";
       const rank = counter + 1;
       const isGitHubUser = avatar?.indexOf("github") > -1;
       return /* @__PURE__ */ jsxs(
@@ -296,14 +296,14 @@ function leaderboardApi(context) {
   return {
     listLeaderboardStats: async function() {
       return api(context).get(
-        `${undefined                              }/v1-list-leaderboard-stats`,
+        `${"https://api.roadmap.sh"}/v1-list-leaderboard-stats`,
         {}
       );
     }
   };
 }
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 const $$Leaderboard = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);

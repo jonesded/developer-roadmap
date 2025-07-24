@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { D as DashboardPage } from '../chunks/DashboardPage_BCaspuoU.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { D as DashboardPage } from '../chunks/DashboardPage_Di1UiaA-.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { g as getAllBestPractices } from '../chunks/best-practice_BojAiq1X.mjs';
 import { g as getAllQuestionGroups } from '../chunks/question-group_Ch4lCKsB.mjs';
 import { a as getRoadmapsByTag } from '../chunks/roadmap_VC9fOZso.mjs';

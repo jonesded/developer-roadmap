@@ -1,12 +1,12 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$BaseLayout } from '../../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
 import { S as SkeletonRoadmapHeader } from '../../chunks/SkeletonRoadmapHeader_B2JB4ZcL.mjs';
-import { $ as $$Loader } from '../../chunks/Loader_K1OFDMn8.mjs';
-import { $ as $$ProgressHelpPopup } from '../../chunks/ProgressHelpPopup_CChM10jJ.mjs';
-import { r as roadmapApi } from '../../chunks/roadmap_D77hGBTP.mjs';
+import { $ as $$Loader } from '../../chunks/Loader_D0GX2Nmm.mjs';
+import { $ as $$ProgressHelpPopup } from '../../chunks/ProgressHelpPopup_BHpdnDjM.mjs';
+import { r as roadmapApi } from '../../chunks/roadmap_B891_FCi.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 const $$customRoadmapSlug = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);

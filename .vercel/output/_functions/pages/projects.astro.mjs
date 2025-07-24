@@ -1,13 +1,13 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { b as getUrlParams, c as cn, d as deleteUrlParam, s as setUrlParams, $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { b as getUrlParams, c as cn, d as deleteUrlParam, s as setUrlParams, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { p as projectDifficulties, a as getRoadmapsProjects } from '../chunks/project_CvYjxAZ4.mjs';
 import { c as getRoadmapsByIds } from '../chunks/roadmap_VC9fOZso.mjs';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import 'js-cookie';
 import { useMemo, useState, useEffect } from 'react';
 import { Filter, X, Box } from 'lucide-react';
-import { C as CategoryFilterButton } from '../chunks/CategoryFilterButton_9mxmd7vT.mjs';
-import { P as ProjectCard, p as projectApi } from '../chunks/project_3cUbsQ_1.mjs';
+import { C as CategoryFilterButton } from '../chunks/CategoryFilterButton_4opjYEUe.mjs';
+import { P as ProjectCard, p as projectApi } from '../chunks/project_49krD14r.mjs';
 export { renderers } from '../renderers.mjs';
 
 function ProjectsPageHeader() {
@@ -170,7 +170,7 @@ function ProjectsPage(props) {
   ] });
 }
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;

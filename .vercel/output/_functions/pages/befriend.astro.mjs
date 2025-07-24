@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_CCCzwF3s.mjs';
-import { m as $$LoginPopup } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_DPxxQUwD.mjs';
+import { m as $$LoginPopup } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Befriend = createComponent(($$result, $$props, $$slots) => {

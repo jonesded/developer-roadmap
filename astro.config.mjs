@@ -10,7 +10,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://hnmdevs.com/',
+  site: 'https://doc.imoogleai.xyz/',
   redirects: {
     '/devops/devops-engineer': {
       status: 301,

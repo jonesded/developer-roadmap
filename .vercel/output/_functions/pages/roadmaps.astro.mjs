@@ -1,13 +1,13 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { i as isLoggedIn, b as getUrlParams, c as cn, d as deleteUrlParam, s as setUrlParams, e as httpGet, $ as $$BaseLayout } from '../chunks/BaseLayout_BrSKT5L_.mjs';
+import { i as isLoggedIn, b as getUrlParams, c as cn, d as deleteUrlParam, s as setUrlParams, e as httpGet, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { Filter, X } from 'lucide-react';
-import { C as CategoryFilterButton } from '../chunks/CategoryFilterButton_9mxmd7vT.mjs';
+import { C as CategoryFilterButton } from '../chunks/CategoryFilterButton_4opjYEUe.mjs';
 import { u as useIsMounted } from '../chunks/use-is-mounted_DjfnSlIF.mjs';
-import { M as MarkFavorite } from '../chunks/MarkFavorite_D3-XYtD_.mjs';
+import { M as MarkFavorite } from '../chunks/MarkFavorite_5WMrRtGm.mjs';
 import { s as showLoginPopup } from '../chunks/popup_DWUkHIfQ.mjs';
-import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_ToY2DtZF.mjs';
+import { $ as $$ChangelogBanner } from '../chunks/ChangelogBanner_DAZ3Ne46.mjs';
 export { renderers } from '../renderers.mjs';
 
 function RoadmapCard(props) {
@@ -502,7 +502,7 @@ function RoadmapsPage() {
   }, [activeGroup]);
   async function loadProgress() {
     const { response: progressList, error } = await httpGet(
-      `${undefined                              }/v1-get-hero-roadmaps`
+      `${"https://api.roadmap.sh"}/v1-get-hero-roadmaps`
     );
     if (error || !progressList) {
       return;

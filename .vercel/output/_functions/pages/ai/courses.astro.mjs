@@ -3,17 +3,17 @@ import { jsxs, Fragment, jsx } from 'react/jsx-runtime';
 import { useQuery } from '@tanstack/react-query';
 import { Loader2, BookOpen } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { b as getUrlParams, s as setUrlParams, d as deleteUrlParam, i as isLoggedIn } from '../../chunks/BaseLayout_BrSKT5L_.mjs';
-import { a as aiLimitOptions, b as listUserAiCoursesOptions } from '../../chunks/ai-course_sZQdwLbV.mjs';
-import { q as queryClient } from '../../chunks/query-client_rwy39LWF.mjs';
-import { a as AICourseSearch, b as AITutorTallMessage } from '../../chunks/AITutorTallMessage_hW-mNMq6.mjs';
-import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_B2RF3Ir7.mjs';
-import { P as Pagination } from '../../chunks/Pagination_P8BoyGfA.mjs';
-import { A as AICourseCard } from '../../chunks/AICourseCard_R0K9YkeU.mjs';
+import { b as getUrlParams, s as setUrlParams, d as deleteUrlParam, i as isLoggedIn } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
+import { a as aiLimitOptions, b as listUserAiCoursesOptions } from '../../chunks/ai-course_IUwlyb1o.mjs';
+import { q as queryClient } from '../../chunks/query-client_B4F1D3EC.mjs';
+import { a as AICourseSearch, b as AITutorTallMessage } from '../../chunks/AITutorTallMessage_BZGL-lHm.mjs';
+import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_CxrAT9TD.mjs';
+import { P as Pagination } from '../../chunks/Pagination_BY4mUo2a.mjs';
+import { A as AICourseCard } from '../../chunks/AICourseCard_o1xVbuzG.mjs';
 import { s as showLoginPopup } from '../../chunks/popup_DWUkHIfQ.mjs';
-import { u as useIsPaidUser } from '../../chunks/billing_raRJBpT1.mjs';
-import { A as AIUsageWarning, a as AILibraryLayout } from '../../chunks/AILibraryLayout_BP8r272b.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
+import { u as useIsPaidUser } from '../../chunks/billing_BlRWCv4l.mjs';
+import { A as AIUsageWarning, a as AILibraryLayout } from '../../chunks/AILibraryLayout_FuT54VSD.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_ZOfUMIZI.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function UserCoursesList() {

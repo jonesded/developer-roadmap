@@ -1,23 +1,23 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_DrySdgR7.mjs';
+import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_h4-ZR5FJ.mjs';
 import { jsx, jsxs, Fragment as Fragment$1 } from 'react/jsx-runtime';
 /* empty css                                     */
 import { useQuery, useMutation } from '@tanstack/react-query';
 import { ChevronRight, SettingsIcon, Trash2, BotIcon, BookIcon, PlusIcon, GiftIcon, XIcon, Frown, Loader2Icon, Bot, HistoryIcon, LockIcon, PauseCircleIcon, SendIcon } from 'lucide-react';
 import { forwardRef, useState, useEffect, useImperativeHandle, Fragment, lazy, useRef, useCallback, useLayoutEffect, useMemo } from 'react';
 import { flushSync } from 'react-dom';
-import { j as roadmapDetailsOptions, r as roadmapJSONOptions, d as userRoadmapPersonaOptions, c as chatHistoryOptions, u as useRoadmapAIChat, a as roadmapAIChatRenderer } from '../../chunks/ListChatHistory_CIsf3J9j.mjs';
+import { j as roadmapDetailsOptions, r as roadmapJSONOptions, d as userRoadmapPersonaOptions, c as chatHistoryOptions, u as useRoadmapAIChat, a as roadmapAIChatRenderer } from '../../chunks/ListChatHistory_DlOCoRfC.mjs';
 import { u as useToast } from '../../chunks/use-toast_BYLkOsfO.mjs';
-import { c as cn, i as isLoggedIn, p as pageProgressMessage, l as useKeydown, b as getUrlParams, d as deleteUrlParam } from '../../chunks/BaseLayout_BrSKT5L_.mjs';
+import { c as cn, i as isLoggedIn, p as pageProgressMessage, l as useKeydown, b as getUrlParams, d as deleteUrlParam } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
 import { l as lockBodyScroll } from '../../chunks/dom_C6E8wq7N.mjs';
 import { g as getTailwindScreenDimension } from '../../chunks/is-mobile_BHDNWQGh.mjs';
 import { s as showLoginPopup } from '../../chunks/popup_DWUkHIfQ.mjs';
 import { s as slugify } from '../../chunks/slugger_ChlNJxtz.mjs';
-import { a as aiLimitOptions } from '../../chunks/ai-course_sZQdwLbV.mjs';
-import { b as billingDetailsOptions } from '../../chunks/billing_raRJBpT1.mjs';
-import { r as roadmapTreeMappingOptions, u as userResourceProgressOptions } from '../../chunks/roadmap-tree_DW8Rv0z5.mjs';
-import { q as queryClient, a as httpPost } from '../../chunks/query-client_rwy39LWF.mjs';
-import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_B2RF3Ir7.mjs';
+import { a as aiLimitOptions } from '../../chunks/ai-course_IUwlyb1o.mjs';
+import { b as billingDetailsOptions } from '../../chunks/billing_BlRWCv4l.mjs';
+import { r as roadmapTreeMappingOptions, u as userResourceProgressOptions } from '../../chunks/roadmap-tree_DhFfmgQ6.mjs';
+import { q as queryClient, a as httpPost } from '../../chunks/query-client_B4F1D3EC.mjs';
+import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_CxrAT9TD.mjs';
 /* empty css                                 */
 import { ReactRenderer, useEditor, EditorContent } from '@tiptap/react';
 import DocumentExtension from '@tiptap/extension-document';
@@ -29,16 +29,16 @@ import '@tiptap/pm/model';
 import { PluginKey } from '@tiptap/pm/state';
 import Suggestion from '@tiptap/suggestion';
 import tippy from 'tippy.js';
-import { T as TopicDetail } from '../../chunks/TopicDetail_DtNGQk1E.mjs';
-import { b as UserPersonaForm, R as RoadmapAIChatHistory, U as UpdatePersonaModal, a as RoadmapAIChatCard } from '../../chunks/UpdatePersonaModal_BYS1yBW_.mjs';
-import { a as renderTopicProgress, u as updateResourceProgress } from '../../chunks/resource-progress_D7IfDnhr.mjs';
+import { T as TopicDetail } from '../../chunks/TopicDetail_DodOcJxQ.mjs';
+import { b as UserPersonaForm, R as RoadmapAIChatHistory, U as UpdatePersonaModal, a as RoadmapAIChatCard } from '../../chunks/UpdatePersonaModal_CmDp_pWg.mjs';
+import { a as renderTopicProgress, u as updateResourceProgress } from '../../chunks/resource-progress_Dhi8X1Qg.mjs';
 import 'clsx';
 import 'js-cookie';
 import '../../chunks/markdown_rbU7j7cH.mjs';
 import { g as getPercentage } from '../../chunks/number_D9-I_I5P.mjs';
-import { A as AILimitsPopup } from '../../chunks/AILimitsPopup_C4V0wYi5.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
-import { A as AITutorLayout } from '../../chunks/AITutorLayout_CJilm_5H.mjs';
+import { A as AILimitsPopup } from '../../chunks/AILimitsPopup_DeEvIsvX.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_ZOfUMIZI.mjs';
+import { A as AITutorLayout } from '../../chunks/AITutorLayout_DTqb4Lq4.mjs';
 import { b as getRoadmapById, g as getRoadmapIds } from '../../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../../renderers.mjs';
 
@@ -1355,7 +1355,7 @@ function Loader(props) {
   ] }) });
 }
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const prerender = false;
 async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();

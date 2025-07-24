@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$Loader } from '../../chunks/Loader_K1OFDMn8.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_BiNdppmE.mjs';
-import { j as $$AstroIcon } from '../../chunks/BaseLayout_BrSKT5L_.mjs';
+import { $ as $$Loader } from '../../chunks/Loader_D0GX2Nmm.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_ZOfUMIZI.mjs';
+import { j as $$AstroIcon } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
 export { renderers } from '../../renderers.mjs';
 
-const $$Astro = createAstro("https://hnmdevs.com/");
+const $$Astro = createAstro("https://doc.imoogleai.xyz/");
 const $$Embed = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Embed;

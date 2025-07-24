@@ -11,28 +11,28 @@ async function getBestPracticesIds() {
 
 export function shouldIndexPage(pageUrl) {
   return ![
-    'https://hnmdevs.com/404',
-    'https://hnmdevs.com/terms',
-    'https://hnmdevs.com/privacy',
-    'https://hnmdevs.com/pdfs',
-    'https://hnmdevs.com/g',
+    'https://doc.imoogleai.xyz/404',
+    'https://doc.imoogleai.xyz/terms',
+    'https://doc.imoogleai.xyz/privacy',
+    'https://doc.imoogleai.xyz/pdfs',
+    'https://doc.imoogleai.xyz/g',
   ].includes(pageUrl);
 }
 
 export async function serializeSitemap(item) {
   const highPriorityPages = [
-    'https://hnmdevs.com',
-    'https://hnmdevs.com/about',
-    'https://hnmdevs.com/roadmaps',
-    'https://hnmdevs.com/best-practices',
-    'https://hnmdevs.com/guides',
-    'https://hnmdevs.com/videos',
+    'https://doc.imoogleai.xyz',
+    'https://doc.imoogleai.xyz/about',
+    'https://doc.imoogleai.xyz/roadmaps',
+    'https://doc.imoogleai.xyz/best-practices',
+    'https://doc.imoogleai.xyz/guides',
+    'https://doc.imoogleai.xyz/videos',
     ...(await getRoadmapIds()).flatMap((id) => [
-      `https://hnmdevs.com/${id}`,
-      `https://hnmdevs.com/${id}/topics`,
+      `https://doc.imoogleai.xyz/${id}`,
+      `https://doc.imoogleai.xyz/${id}/topics`,
     ]),
     ...(await getBestPracticesIds()).map(
-      (id) => `https://hnmdevs.com/best-practices/${id}`
+      (id) => `https://doc.imoogleai.xyz/best-practices/${id}`
     ),
   ];
 
@@ -50,8 +50,8 @@ export async function serializeSitemap(item) {
 
   // Guide and video pages
   if (
-    item.url.startsWith('https://hnmdevs.com/guides') ||
-    item.url.startsWith('https://hnmdevs.com/videos')
+    item.url.startsWith('https://doc.imoogleai.xyz/guides') ||
+    item.url.startsWith('https://doc.imoogleai.xyz/videos')
   ) {
     return {
       ...item,

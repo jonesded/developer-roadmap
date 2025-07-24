@@ -1,14 +1,14 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { T as TeamSidebar } from '../../chunks/TeamSidebar_CP9wugJX.mjs';
+import { T as TeamSidebar } from '../../chunks/TeamSidebar_DUS6JFMa.mjs';
 import { jsx, Fragment, jsxs } from 'react/jsx-runtime';
 import { useRef, useState, useEffect } from 'react';
-import { u as useOutsideClick, l as useKeydown, v as httpDelete, p as pageProgressMessage, S as Spinner, e as httpGet, w as httpPut } from '../../chunks/BaseLayout_BrSKT5L_.mjs';
-import { U as UploadProfilePicture } from '../../chunks/UploadProfilePicture_BWofg_SO.mjs';
+import { u as useOutsideClick, l as useKeydown, v as httpDelete, p as pageProgressMessage, S as Spinner, e as httpGet, w as httpPut } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
+import { U as UploadProfilePicture } from '../../chunks/UploadProfilePicture_ltiBg9VR.mjs';
 import { u as useTeamId } from '../../chunks/use-team-id_YU7lJR0h.mjs';
 import { u as useToast } from '../../chunks/use-toast_BYLkOsfO.mjs';
 import { b as $isCurrentTeamAdmin } from '../../chunks/team_B533nqZG.mjs';
 import { useStore } from '@nanostores/react';
-import { $ as $$AccountLayout } from '../../chunks/AccountLayout_CCCzwF3s.mjs';
+import { $ as $$AccountLayout } from '../../chunks/AccountLayout_DPxxQUwD.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function DeleteTeamPopup(props) {
@@ -39,7 +39,7 @@ function DeleteTeamPopup(props) {
       return;
     }
     const { response, error: error2 } = await httpDelete(
-      `${undefined                              }/v1-delete-team/${teamId}`
+      `${"https://api.roadmap.sh"}/v1-delete-team/${teamId}`
     );
     if (error2 || !response) {
       setIsLoading(false);
@@ -145,7 +145,7 @@ function UpdateTeamForm() {
       return;
     }
     const { response, error } = await httpPut(
-      `${undefined                              }/v1-update-team/${teamId}`,
+      `${"https://api.roadmap.sh"}/v1-update-team/${teamId}`,
       {
         name,
         website,
@@ -171,7 +171,7 @@ function UpdateTeamForm() {
   };
   async function loadTeam() {
     const { response, error } = await httpGet(
-      `${undefined                              }/v1-get-team/${teamId}`
+      `${"https://api.roadmap.sh"}/v1-get-team/${teamId}`
     );
     if (error || !response) {
       console.log(error);
@@ -202,7 +202,7 @@ function UpdateTeamForm() {
       {
         isDisabled,
         type: "logo",
-        avatarUrl: avatar ? `${undefined                                      }/${avatar}` : "/images/default-avatar.png",
+        avatarUrl: avatar ? `${"https://dodrc8eu8m09s.cloudfront.net/avatars"}/${avatar}` : "/images/default-avatar.png",
         teamId
       }
     ),

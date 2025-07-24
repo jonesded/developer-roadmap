@@ -1,14 +1,14 @@
 import { _ as __variableDynamicImportRuntimeHelper } from '../../chunks/dynamic-import-helper_uMTE3ehW.mjs';
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$RoadmapHeader } from '../../chunks/RoadmapHeader_QRCcxtUY.mjs';
+import { $ as $$RoadmapHeader } from '../../chunks/RoadmapHeader_BoAvGldn.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { FolderKanbanIcon, Bell, Check, Trash2, HeartHandshake } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
-import { i as isLoggedIn, c as cn, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, h as httpPost, $ as $$BaseLayout } from '../../chunks/BaseLayout_B-BXcELP.mjs';
+import { i as isLoggedIn, c as cn, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, h as httpPost, $ as $$BaseLayout } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
 import { s as showLoginPopup } from '../../chunks/popup_DWUkHIfQ.mjs';
-import { P as ProjectCard, p as projectApi } from '../../chunks/project_nhp1QVeo.mjs';
+import { P as ProjectCard, p as projectApi } from '../../chunks/project_49krD14r.mjs';
 import { p as projectDifficulties, g as getProjectsByRoadmapId } from '../../chunks/project_CvYjxAZ4.mjs';
-import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_BMQllw-Q.mjs';
+import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_CCJZAxVd.mjs';
 import { g as getRoadmapIds } from '../../chunks/roadmap_VC9fOZso.mjs';
 export { renderers } from '../../renderers.mjs';
 
@@ -85,7 +85,7 @@ function ProjectsList(props) {
     }
     const projectIds = projects.map((project) => project.id);
     const { response, error } = await httpPost(
-      `${"https://api.imoogleai.xyz"}/v1-list-project-statuses`,
+      `${"https://api.roadmap.sh"}/v1-list-project-statuses`,
       {
         projectIds
       }

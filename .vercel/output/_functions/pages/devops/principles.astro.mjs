@@ -1,8 +1,8 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$GuideContent } from '../../chunks/GuideContent_dPZAVH0a.mjs';
-import { $ as $$BaseLayout } from '../../chunks/BaseLayout_B-BXcELP.mjs';
+import { $ as $$GuideContent } from '../../chunks/GuideContent_BzmkzWF9.mjs';
+import { $ as $$BaseLayout } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
 import { a as getGuideById } from '../../chunks/guide_CTGroPUz.mjs';
-import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_BMQllw-Q.mjs';
+import { g as getOpenGraphImageUrl } from '../../chunks/open-graph_CCJZAxVd.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Principles = createComponent(async ($$result, $$props, $$slots) => {

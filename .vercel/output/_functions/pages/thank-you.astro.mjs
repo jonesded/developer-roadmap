@@ -1,8 +1,8 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { b as getUrlParams, S as Spinner, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { b as getUrlParams, S as Spinner, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { V as VerifyUpgrade } from '../chunks/VerifyUpgrade_Bjaod_vc.mjs';
+import { V as VerifyUpgrade } from '../chunks/VerifyUpgrade_8-zAnLN1.mjs';
 import { ChevronRight } from 'lucide-react';
 export { renderers } from '../renderers.mjs';
 

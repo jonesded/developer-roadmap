@@ -1,10 +1,10 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState } from 'react';
-import { c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { c as cn, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { Users2, Zap, FolderKanban, Users, GitPullRequest } from 'lucide-react';
 import { E as ErrorIcon } from '../chunks/ErrorIcon_C-N2vwX6.mjs';
-import { a as api } from '../chunks/api_Dq56p7jO.mjs';
+import { a as api } from '../chunks/api_z2VutCmy.mjs';
 export { renderers } from '../renderers.mjs';
 
 function TrophyEmoji(props) {
@@ -296,7 +296,7 @@ function leaderboardApi(context) {
   return {
     listLeaderboardStats: async function() {
       return api(context).get(
-        `${"https://api.imoogleai.xyz"}/v1-list-leaderboard-stats`,
+        `${"https://api.roadmap.sh"}/v1-list-leaderboard-stats`,
         {}
       );
     }

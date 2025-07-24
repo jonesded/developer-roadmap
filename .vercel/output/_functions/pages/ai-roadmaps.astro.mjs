@@ -5,17 +5,17 @@ import { useMemo, useState, useRef, useEffect, useCallback } from 'react';
 import { u as useToast } from '../chunks/use-toast_BYLkOsfO.mjs';
 import { generateAIRoadmapFromText, renderFlowJSON } from '../chunks/index_DJK1nS1V.mjs';
 import { r as replaceChildren } from '../chunks/dom_C6E8wq7N.mjs';
-import { u as useOutsideClick, c as cn, S as Spinner, e as httpGet, i as isLoggedIn, l as useKeydown, r as removeAuthToken, b as getUrlParams, d as deleteUrlParam, x as setAIReferralCode, p as pageProgressMessage, A as AuthenticationForm, y as visitAIRoadmap, h as httpPost, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { u as useOutsideClick, c as cn, S as Spinner, e as httpGet, i as isLoggedIn, l as useKeydown, r as removeAuthToken, b as getUrlParams, d as deleteUrlParam, x as setAIReferralCode, p as pageProgressMessage, A as AuthenticationForm, y as visitAIRoadmap, h as httpPost, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { Wand, Ban, ArrowUpRight, Telescope, Contact, X, ArrowRight, FileText, Download, Save, PenSquare } from 'lucide-react';
 import { s as showLoginPopup } from '../chunks/popup_DWUkHIfQ.mjs';
 import { u as useDebounceValue } from '../chunks/use-debounce_BdAoSD5T.mjs';
-import { U as UpgradeAccountModal } from '../chunks/UpgradeAccountModal_vuvdVS66.mjs';
-import { u as useIsPaidUser } from '../chunks/billing_5mov2PsZ.mjs';
-import { S as ShareRoadmapButton } from '../chunks/ShareRoadmapButton_B_kasz8J.mjs';
+import { U as UpgradeAccountModal } from '../chunks/UpgradeAccountModal_CxrAT9TD.mjs';
+import { u as useIsPaidUser } from '../chunks/billing_BlRWCv4l.mjs';
+import { S as ShareRoadmapButton } from '../chunks/ShareRoadmapButton_C-yufPxB.mjs';
 import { a as markdownToHtml } from '../chunks/markdown_rbU7j7cH.mjs';
 import { a as readAIRoadmapContentStream, I as IS_KEY_ONLY_ROADMAP_GENERATION, b as readAIRoadmapStream, g as generateAICourseRoadmapStructure } from '../chunks/ai_D2DRO333.mjs';
-import { A as AIRoadmapAlert } from '../chunks/AIRoadmapAlert_DSyGh6PZ.mjs';
-import { C as CheckSubscriptionVerification } from '../chunks/CheckSubscriptionVerification_BpAEoJpp.mjs';
+import { A as AIRoadmapAlert } from '../chunks/AIRoadmapAlert_DMrFrkcx.mjs';
+import { C as CheckSubscriptionVerification } from '../chunks/CheckSubscriptionVerification_h4-ZR5FJ.mjs';
 export { renderers } from '../renderers.mjs';
 
 function AITermSuggestionInput(props) {
@@ -493,7 +493,7 @@ function RoadmapTopicDetail(props) {
       return;
     }
     const response = await fetch(
-      `${"https://api.imoogleai.xyz"}/v1-generate-ai-roadmap-content/${roadmapId}`,
+      `${"https://api.roadmap.sh"}/v1-generate-ai-roadmap-content/${roadmapId}`,
       {
         method: "POST",
         headers: {
@@ -736,7 +736,7 @@ function GenerateRoadmap(props) {
     setCurrentRoadmap(null);
     const origin = window.location.origin;
     const response = await fetch(
-      `${"https://api.imoogleai.xyz"}/v1-generate-ai-roadmap`,
+      `${"https://api.roadmap.sh"}/v1-generate-ai-roadmap`,
       {
         method: "POST",
         headers: {
@@ -817,7 +817,7 @@ function GenerateRoadmap(props) {
     pageProgressMessage.set("Redirecting to Editor");
     const { nodes, edges } = generateAIRoadmapFromText();
     const { response, error } = await httpPost(
-      `${"https://api.imoogleai.xyz"}/v1-save-ai-roadmap/${currentRoadmap?.id}`,
+      `${"https://api.roadmap.sh"}/v1-save-ai-roadmap/${currentRoadmap?.id}`,
       {
         title: roadmapTerm,
         nodes: nodes.map((node) => ({
@@ -873,7 +873,7 @@ function GenerateRoadmap(props) {
   };
   const loadAIRoadmapLimit = async () => {
     const { response, error } = await httpGet(
-      `${"https://api.imoogleai.xyz"}/v1-get-ai-roadmap-limit`
+      `${"https://api.roadmap.sh"}/v1-get-ai-roadmap-limit`
     );
     if (error || !response) {
       toast.error(error?.message || "Something went wrong");
@@ -887,7 +887,7 @@ function GenerateRoadmap(props) {
   };
   const loadAIRoadmap = async (roadmapId2) => {
     pageProgressMessage.set("Loading Roadmap");
-    const { response, error } = await httpGet(`${"https://api.imoogleai.xyz"}/v1-get-ai-roadmap/${roadmapId2}`);
+    const { response, error } = await httpGet(`${"https://api.roadmap.sh"}/v1-get-ai-roadmap/${roadmapId2}`);
     if (error || !response) {
       toast.error(error?.message || "Something went wrong");
       setIsLoading(false);
@@ -1193,7 +1193,7 @@ function GenerateRoadmap(props) {
                     const response = await saveAIRoadmap();
                     if (response?.roadmapId) {
                       window.open(
-                        `${"https://draw.imoogleai.xyz"}/${response?.roadmapId}`,
+                        `${"https://draw.roadmap.sh"}/${response?.roadmapId}`,
                         "_blank"
                       );
                     }

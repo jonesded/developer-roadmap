@@ -1,4 +1,4 @@
-import { a as getDefaultOpenGraphImageBuffer, b as getResourceOpenGraph } from '../../../chunks/open-graph_BMQllw-Q.mjs';
+import { a as getDefaultOpenGraphImageBuffer, b as getResourceOpenGraph } from '../../../chunks/open-graph_CCJZAxVd.mjs';
 import { Transformer } from '@napi-rs/image';
 export { renderers } from '../../../renderers.mjs';
 

@@ -1,5 +1,5 @@
 import { Transformer } from '@napi-rs/image';
-import { a as getDefaultOpenGraphImageBuffer, b as getResourceOpenGraph } from '../../../chunks/open-graph_BMQllw-Q.mjs';
+import { a as getDefaultOpenGraphImageBuffer, b as getResourceOpenGraph } from '../../../chunks/open-graph_CCJZAxVd.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const prerender = false;

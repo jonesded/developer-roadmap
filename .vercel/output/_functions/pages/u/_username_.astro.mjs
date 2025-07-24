@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { g as getProjectList } from '../../chunks/roadmap_QMvCdhgJ.mjs';
-import { a as api } from '../../chunks/api_Dq56p7jO.mjs';
+import { g as getProjectList } from '../../chunks/roadmap_B891_FCi.mjs';
+import { a as api } from '../../chunks/api_z2VutCmy.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { Lock, Github, LinkedinIcon, Twitter, Globe, Mail, Pencil, MoreVertical, CircleDashed, ThumbsUp } from 'lucide-react';
 import CalendarHeatmap from 'react-calendar-heatmap';
@@ -9,7 +9,7 @@ import { Tooltip } from 'react-tooltip';
 import { f as formatMonthDate, a as formatActivityDate } from '../../chunks/date_iLNlXR7B.mjs';
 import dayjs from 'dayjs';
 import { g as getPercentage } from '../../chunks/number_D9-I_I5P.mjs';
-import { u as useOutsideClick, l as useKeydown, c as cn, g as getUser, $ as $$BaseLayout } from '../../chunks/BaseLayout_B-BXcELP.mjs';
+import { u as useOutsideClick, l as useKeydown, c as cn, g as getUser, $ as $$BaseLayout } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
 import { useRef, useState } from 'react';
 import { u as useCopyText } from '../../chunks/use-copy-text_Bqwbcq8G.mjs';
 import { C as CheckIcon } from '../../chunks/CheckIcon_B3c1RSNy.mjs';
@@ -20,12 +20,12 @@ function userApi(context) {
   return {
     getPublicProfile: async function(username) {
       return api(context).get(
-        `${"https://api.imoogleai.xyz"}/v1-get-public-profile/${username}`
+        `${"https://api.roadmap.sh"}/v1-get-public-profile/${username}`
       );
     },
     getUserProfileRoadmap: async function(username, resourceId, resourceType = "roadmap") {
       return api(context).get(
-        `${"https://api.imoogleai.xyz"}/v1-get-user-profile-roadmap/${username}`,
+        `${"https://api.roadmap.sh"}/v1-get-user-profile-roadmap/${username}`,
         {
           resourceId,
           resourceType

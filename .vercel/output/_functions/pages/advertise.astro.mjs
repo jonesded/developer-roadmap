@@ -1,5 +1,5 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { p as pageProgressMessage, h as httpPost, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { p as pageProgressMessage, h as httpPost, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState } from 'react';
 import { C as CheckIcon } from '../chunks/CheckIcon_B3c1RSNy.mjs';
@@ -71,7 +71,7 @@ function AdvertiseForm() {
     e.preventDefault();
     pageProgressMessage.set("Please wait");
     const { response, error: error2 } = await httpPost(
-      `${"https://api.imoogleai.xyz"}/v1-advertise`,
+      `${"https://api.roadmap.sh"}/v1-advertise`,
       formData
     );
     if (!response || error2) {

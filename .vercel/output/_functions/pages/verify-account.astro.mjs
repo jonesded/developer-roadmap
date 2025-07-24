@@ -2,9 +2,9 @@ import { a as createComponent, r as renderComponent, b as renderTemplate, m as m
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
 import 'js-cookie';
-import { S as Spinner, h as httpPost, t as triggerUtmRegistration, q as setAuthToken, F as FIRST_LOGIN_PARAM } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { S as Spinner, h as httpPost, t as triggerUtmRegistration, q as setAuthToken, F as FIRST_LOGIN_PARAM } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { E as ErrorIcon2 } from '../chunks/ErrorIcon2_Bn_H4dmb.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_BpeWaMTO.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_DPxxQUwD.mjs';
 export { renderers } from '../renderers.mjs';
 
 function TriggerVerifyAccount() {
@@ -13,7 +13,7 @@ function TriggerVerifyAccount() {
   const triggerVerify = (code) => {
     setIsLoading(true);
     httpPost(
-      `${"https://api.imoogleai.xyz"}/v1-verify-account`,
+      `${"https://api.roadmap.sh"}/v1-verify-account`,
       {
         code
       }

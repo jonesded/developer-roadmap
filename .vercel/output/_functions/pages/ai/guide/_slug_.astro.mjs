@@ -1,6 +1,6 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate } from '../../../chunks/astro/server_Cqa-EqH9.mjs';
-import { A as AIGuide } from '../../../chunks/AIGuide_CX-GUyry.mjs';
-import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_CB584z4R.mjs';
+import { A as AIGuide } from '../../../chunks/AIGuide_37b6s92r.mjs';
+import { $ as $$SkeletonLayout } from '../../../chunks/SkeletonLayout_ZOfUMIZI.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 const $$Astro = createAstro("https://doc.imoogleai.xyz/");

@@ -1,15 +1,15 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { c as cn, i as isLoggedIn, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { c as cn, i as isLoggedIn, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { Star, Users2, Bot, GitPullRequest, Lock, Play, Zap, Clock, Book, Wand2, PartyPopper, CheckCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { u as useToast } from '../chunks/use-toast_BYLkOsfO.mjs';
-import { a as httpPost, q as queryClient } from '../chunks/query-client_CBXGK_YM.mjs';
-import { U as USER_SUBSCRIPTION_PLAN_PRICES, b as billingDetailsOptions } from '../chunks/billing_5mov2PsZ.mjs';
-import { V as VideoModal } from '../chunks/VideoModal_CB0u1dGE.mjs';
+import { a as httpPost, q as queryClient } from '../chunks/query-client_B4F1D3EC.mjs';
+import { U as USER_SUBSCRIPTION_PLAN_PRICES, b as billingDetailsOptions } from '../chunks/billing_BlRWCv4l.mjs';
+import { V as VideoModal } from '../chunks/VideoModal_BQqlzJ3_.mjs';
 import { s as showLoginPopup } from '../chunks/popup_DWUkHIfQ.mjs';
-import { U as UpdatePlanConfirmation } from '../chunks/UpdatePlanConfirmation_CySnlcNM.mjs';
+import { U as UpdatePlanConfirmation } from '../chunks/UpdatePlanConfirmation_LMn6bLzK.mjs';
 export { renderers } from '../renderers.mjs';
 
 function CredibilityItem(props) {

@@ -1,13 +1,13 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { b as getUrlParams, c as cn, d as deleteUrlParam, s as setUrlParams, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { b as getUrlParams, c as cn, d as deleteUrlParam, s as setUrlParams, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { p as projectDifficulties, a as getRoadmapsProjects } from '../chunks/project_CvYjxAZ4.mjs';
 import { c as getRoadmapsByIds } from '../chunks/roadmap_VC9fOZso.mjs';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import 'js-cookie';
 import { useMemo, useState, useEffect } from 'react';
 import { Filter, X, Box } from 'lucide-react';
-import { C as CategoryFilterButton } from '../chunks/CategoryFilterButton_DAf7Vqxv.mjs';
-import { P as ProjectCard, p as projectApi } from '../chunks/project_nhp1QVeo.mjs';
+import { C as CategoryFilterButton } from '../chunks/CategoryFilterButton_4opjYEUe.mjs';
+import { P as ProjectCard, p as projectApi } from '../chunks/project_49krD14r.mjs';
 export { renderers } from '../renderers.mjs';
 
 function ProjectsPageHeader() {

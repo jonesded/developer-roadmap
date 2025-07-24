@@ -1,16 +1,16 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, Fragment, jsx } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { b as getUrlParams, i as isLoggedIn } from '../../chunks/BaseLayout_B-BXcELP.mjs';
-import { g as generateCourse, A as AICourseContent } from '../../chunks/generate-ai-course_BAnvbtXh.mjs';
+import { b as getUrlParams, i as isLoggedIn } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
+import { g as generateCourse, A as AICourseContent } from '../../chunks/generate-ai-course_CKD8m6jl.mjs';
 import { useQuery } from '@tanstack/react-query';
-import { g as getAiCourseOptions, a as aiLimitOptions } from '../../chunks/ai-course_C2IOZ4Jw.mjs';
-import { q as queryClient } from '../../chunks/query-client_CBXGK_YM.mjs';
+import { g as getAiCourseOptions, a as aiLimitOptions } from '../../chunks/ai-course_IUwlyb1o.mjs';
+import { q as queryClient } from '../../chunks/query-client_B4F1D3EC.mjs';
 import { g as getQuestionAnswerChatMessages } from '../../chunks/ai-questions_vm3AhbaO.mjs';
-import { u as useIsPaidUser } from '../../chunks/billing_5mov2PsZ.mjs';
-import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_vuvdVS66.mjs';
-import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_CB584z4R.mjs';
-import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_BpAEoJpp.mjs';
+import { u as useIsPaidUser } from '../../chunks/billing_BlRWCv4l.mjs';
+import { U as UpgradeAccountModal } from '../../chunks/UpgradeAccountModal_CxrAT9TD.mjs';
+import { $ as $$SkeletonLayout } from '../../chunks/SkeletonLayout_ZOfUMIZI.mjs';
+import { C as CheckSubscriptionVerification } from '../../chunks/CheckSubscriptionVerification_h4-ZR5FJ.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function GenerateAICourse(props) {

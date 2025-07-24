@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { T as TeamSidebar } from '../../chunks/TeamSidebar_6RUbH9Wn.mjs';
-import { $ as $$AccountLayout } from '../../chunks/AccountLayout_BpeWaMTO.mjs';
+import { T as TeamSidebar } from '../../chunks/TeamSidebar_DUS6JFMa.mjs';
+import { $ as $$AccountLayout } from '../../chunks/AccountLayout_DPxxQUwD.mjs';
 export { renderers } from '../../renderers.mjs';
 
 const $$Activity = createComponent(($$result, $$props, $$slots) => {

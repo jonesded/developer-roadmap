@@ -1,7 +1,7 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { $ as $$GridItem } from '../chunks/GridItem_3VMYWlvl.mjs';
 import { $ as $$SimplePageHeader } from '../chunks/SimplePageHeader_CaJW-2KW.mjs';
-import { $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { g as getAllBestPractices } from '../chunks/best-practice_BojAiq1X.mjs';
 export { renderers } from '../renderers.mjs';
 

@@ -1,9 +1,9 @@
-import { a as getDefaultOpenGraphImageBuffer } from '../../../chunks/open-graph_BMQllw-Q.mjs';
+import { a as getDefaultOpenGraphImageBuffer } from '../../../chunks/open-graph_CCJZAxVd.mjs';
 export { renderers } from '../../../renderers.mjs';
 
 async function getRoadCard(version, userId, variant, roadmaps = "") {
   const url = new URL(
-    `${"https://api.imoogleai.xyz"}/v1-badge/${version}/${userId}`
+    `${"https://api.roadmap.sh"}/v1-badge/${version}/${userId}`
   );
   url.searchParams.set("variant", variant);
   if (roadmaps) {

@@ -1,8 +1,8 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_BpeWaMTO.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_DPxxQUwD.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { b as getUrlParams, S as Spinner, n as httpPatch, q as setAuthToken } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { b as getUrlParams, S as Spinner, n as httpPatch, q as setAuthToken } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 import { E as ErrorIcon2 } from '../chunks/ErrorIcon2_Bn_H4dmb.mjs';
 import { C as CheckIcon } from '../chunks/CheckIcon_B3c1RSNy.mjs';
 export { renderers } from '../renderers.mjs';
@@ -16,7 +16,7 @@ function TriggerVerifyEmail() {
   const triggerVerify = (code2) => {
     setStatus("loading");
     httpPatch(
-      `${"https://api.imoogleai.xyz"}/v1-verify-new-email/${code2}`,
+      `${"https://api.roadmap.sh"}/v1-verify-new-email/${code2}`,
       {}
     ).then(({ response, error: error2 }) => {
       if (!response?.token) {

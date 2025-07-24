@@ -1,11 +1,11 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate } from '../../chunks/astro/server_Cqa-EqH9.mjs';
-import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_CmRcSHZn.mjs';
+import { $ as $$AccountSidebar } from '../../chunks/AccountSidebar_CVrXcpx7.mjs';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
-import { p as pageProgressMessage, e as httpGet, n as httpPatch } from '../../chunks/BaseLayout_B-BXcELP.mjs';
+import { p as pageProgressMessage, e as httpGet, n as httpPatch } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
 import { u as useToast } from '../../chunks/use-toast_BYLkOsfO.mjs';
 import { XIcon } from 'lucide-react';
-import { $ as $$AccountLayout } from '../../chunks/AccountLayout_BpeWaMTO.mjs';
+import { $ as $$AccountLayout } from '../../chunks/AccountLayout_DPxxQUwD.mjs';
 export { renderers } from '../../renderers.mjs';
 
 function AcceptIcon(props) {
@@ -38,7 +38,7 @@ function NotificationPage() {
   const [error, setError] = useState("");
   const lostNotifications = async () => {
     const { error: error2, response } = await httpGet(
-      `${"https://api.imoogleai.xyz"}/v1-get-invitation-list`
+      `${"https://api.roadmap.sh"}/v1-get-invitation-list`
     );
     if (error2 || !response) {
       toast.error(error2?.message || "Something went wrong");
@@ -50,7 +50,7 @@ function NotificationPage() {
     setIsLoading(true);
     setError("");
     const { response, error: error2 } = await httpPatch(
-      `${"https://api.imoogleai.xyz"}/v1-respond-invite/${inviteId}`,
+      `${"https://api.roadmap.sh"}/v1-respond-invite/${inviteId}`,
       {
         status
       }

@@ -1,5 +1,5 @@
 import { c as createAstro, a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { k as getRepositoryRank, $ as $$BaseLayout } from '../chunks/BaseLayout_B-BXcELP.mjs';
+import { k as getRepositoryRank, $ as $$BaseLayout } from '../chunks/BaseLayout_C3JOBLhD.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Astro = createAstro("https://doc.imoogleai.xyz/");

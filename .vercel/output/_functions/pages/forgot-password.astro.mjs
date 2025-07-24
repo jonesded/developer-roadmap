@@ -1,8 +1,8 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
 import { jsxs, jsx } from 'react/jsx-runtime';
 import { useState } from 'react';
-import { h as httpPost } from '../chunks/BaseLayout_B-BXcELP.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_BpeWaMTO.mjs';
+import { h as httpPost } from '../chunks/BaseLayout_C3JOBLhD.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_DPxxQUwD.mjs';
 export { renderers } from '../renderers.mjs';
 
 function ForgotPasswordForm() {
@@ -15,7 +15,7 @@ function ForgotPasswordForm() {
     setIsLoading(true);
     setError("");
     const { response, error: error2 } = await httpPost(
-      `${"https://api.imoogleai.xyz"}/v1-forgot-password`,
+      `${"https://api.roadmap.sh"}/v1-forgot-password`,
       {
         email
       }

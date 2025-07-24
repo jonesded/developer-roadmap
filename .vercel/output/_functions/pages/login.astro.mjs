@@ -1,6 +1,6 @@
 import { a as createComponent, r as renderComponent, b as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_Cqa-EqH9.mjs';
-import { A as AuthenticationForm, o as AccountTerms } from '../chunks/BaseLayout_B-BXcELP.mjs';
-import { $ as $$AccountLayout } from '../chunks/AccountLayout_BpeWaMTO.mjs';
+import { A as AuthenticationForm, o as AccountTerms } from '../chunks/BaseLayout_C3JOBLhD.mjs';
+import { $ as $$AccountLayout } from '../chunks/AccountLayout_DPxxQUwD.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Login = createComponent(($$result, $$props, $$slots) => {

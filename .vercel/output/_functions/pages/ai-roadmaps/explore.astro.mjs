@@ -2,10 +2,10 @@ import { a as createComponent, r as renderComponent, b as renderTemplate, m as m
 import { jsxs, jsx, Fragment } from 'react/jsx-runtime';
 import { useState, useRef, useEffect } from 'react';
 import { u as useToast } from '../../chunks/use-toast_BYLkOsfO.mjs';
-import { u as useOutsideClick, S as Spinner, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, e as httpGet, $ as $$BaseLayout } from '../../chunks/BaseLayout_B-BXcELP.mjs';
-import { A as AIRoadmapAlert } from '../../chunks/AIRoadmapAlert_DSyGh6PZ.mjs';
+import { u as useOutsideClick, S as Spinner, b as getUrlParams, s as setUrlParams, d as deleteUrlParam, e as httpGet, $ as $$BaseLayout } from '../../chunks/BaseLayout_C3JOBLhD.mjs';
+import { A as AIRoadmapAlert } from '../../chunks/AIRoadmapAlert_DMrFrkcx.mjs';
 import { ChevronDown, Check, Wand2, Map, Eye, Search } from 'lucide-react';
-import { P as Pagination } from '../../chunks/Pagination_xm1ZIew_.mjs';
+import { P as Pagination } from '../../chunks/Pagination_BY4mUo2a.mjs';
 import { L as LoadingRoadmaps } from '../../chunks/LoadingRoadmaps_Dv_O4-tU.mjs';
 import { g as getRelativeTimeString } from '../../chunks/date_iLNlXR7B.mjs';
 import { u as useDebounceValue } from '../../chunks/use-debounce_BdAoSD5T.mjs';
@@ -229,7 +229,7 @@ function ExploreAIRoadmap() {
   const [roadmapsResponse, setRoadmapsResponse] = useState(null);
   const loadAIRoadmaps = async (currPage = 1, searchTerm = "", sortBy = "createdAt") => {
     const { response, error } = await httpGet(
-      `${"https://api.imoogleai.xyz"}/v1-list-ai-roadmaps`,
+      `${"https://api.roadmap.sh"}/v1-list-ai-roadmaps`,
       {
         currPage,
         ...searchTerm && { term: searchTerm },

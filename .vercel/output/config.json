@@ -493,6 +493,10 @@
 			"dest": "_render"
 		},
 		{
+			"src": "^/projects/([^/]+?)/solutions$",
+			"dest": "_render"
+		},
+		{
 			"src": "^/projects$",
 			"dest": "_render"
 		},
